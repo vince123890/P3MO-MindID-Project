@@ -1,0 +1,137 @@
+{
+  "module_name": "Master Data - Issue/Resiko",
+  "data": [
+    {
+      "code": "<b>IRSK01</b>",
+      "feature": "<b>List Master Data Issue/Resiko</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Search</b>:\n- Kode Issue/Resiko\n- Tipe Resiko/Issue",
+              "note": ""
+            },
+            {
+              "text": "<b>Sorting ASC,DESC</b>:\n- Kode Issue/Resiko\n- Tipe Resiko/Issue\n- Created At",
+              "note": "Default sorting by created_at"
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Column</b>",
+          "detail": [
+            {
+              "text": "<b>Kode Issue/Resiko</b>\n- Hyperlink to detail"
+            },
+            {
+              "text": "<b>Tipe Resiko/Issue</b>\n- Read Only"
+            },
+            {
+              "text": "<b>Created At</b>\n- Read Only"
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Role</b>: Admin"
+            },
+            {
+              "text": "Default sorting based on most recent data"
+            },
+            {
+              "text": "<b>Action</b>: Detail, Edit, Delete\nBulk Action: Delete"
+            },
+            {
+              "text": "<b>Bulk Action</b>: Delete",
+              "note": "Multiple Data Check"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>IRSK02</b>",
+      "feature": "<b>Create Master Data Issue/Resiko</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Kode Issue/Resiko*</b>:\n- Text Field\n- String",
+              "note": "Required field"
+            },
+            {
+              "text": "<b>Tipe Resiko/Issue*</b>:\n- Text Field\n- String",
+              "note": "Required field"
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Create</b>\n Save and Display data in the issue/risk list"
+            },
+            {
+              "text": "<b>Reset</b>\n Reset form to empty state"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>IRSK03</b>",
+      "feature": "<b>Edit Master Data Issue/Resiko</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Kode Issue/Resiko*</b>:\n- Text Field\n- String",
+              "note": "Required field"
+            },
+            {
+              "text": "<b>Tipe Resiko/Issue*</b>:\n- Text Field\n- String",
+              "note": "Required field"
+            },
+            {
+              "text": "<b>Status*</b>:\n- Select Dropdown\n- Active / Inactive",
+              "note": "Only available on edit page - Update Status functionality"
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Update</b>\n Save and Display updated data in the issue/risk detail"
+            },
+            {
+              "text": "<b>Reset</b>\n Reset form to initial values"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>IRSK04</b>",
+      "feature": "<b>Delete Master Data Issue/Resiko</b>",
+      "acceptances": [
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Single Delete</b>\n Delete single item from detail or list page"
+            },
+            {
+              "text": "<b>Bulk Delete</b>\n Delete multiple selected items from list page"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

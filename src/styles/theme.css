@@ -1,0 +1,194 @@
+/* Global Color Theme - Blue and Red */
+
+:root {
+  /* Primary Colors */
+  --primary-blue: #19315a;
+  --primary-red: #c41e3a;
+  --white: #ffffff;
+  
+  /* Blue Variants */
+  --blue-light: #2a4a7a;
+  --blue-dark: #0f1e3a;
+  --blue-hover: #21426e;
+  
+  /* Red Variants */
+  --red-light: #d14458;
+  --red-dark: #a0182d;
+  --red-hover: #b01a32;
+  
+  /* Text Colors */
+  --text-primary: #ffffff;
+  --text-secondary: #f8f9fa;
+  --text-muted: #dee2e6;
+}
+
+/* Override Ant Design Primary Color */
+.ant-btn-primary {
+  background-color: var(--primary-blue) !important;
+  border-color: var(--primary-blue) !important;
+  color: var(--white) !important;
+}
+
+.ant-btn-primary:hover {
+  background-color: var(--blue-hover) !important;
+  border-color: var(--blue-hover) !important;
+  color: var(--white) !important;
+}
+
+.ant-btn-primary:focus {
+  background-color: var(--blue-hover) !important;
+  border-color: var(--blue-hover) !important;
+  color: var(--white) !important;
+}
+
+.ant-btn-primary:active {
+  background-color: var(--blue-dark) !important;
+  border-color: var(--blue-dark) !important;
+  color: var(--white) !important;
+}
+
+/* Danger/Delete Buttons - Red */
+.ant-btn-dangerous,
+.ant-btn[danger] {
+  background-color: var(--primary-red) !important;
+  border-color: var(--primary-red) !important;
+  color: var(--white) !important;
+}
+
+.ant-btn-dangerous:hover,
+.ant-btn[danger]:hover {
+  background-color: var(--red-hover) !important;
+  border-color: var(--red-hover) !important;
+  color: var(--white) !important;
+}
+
+/* Links */
+a, .ant-typography a {
+  color: var(--primary-blue) !important;
+  text-decoration: none !important;
+}
+
+a:hover, .ant-typography a:hover {
+  color: var(--blue-hover) !important;
+  text-decoration: underline !important;
+}
+
+a:visited, .ant-typography a:visited {
+  color: var(--blue-dark) !important;
+}
+
+/* Form Submit/Save Buttons */
+.ant-btn[type="submit"],
+.ant-btn[htmlType="submit"] {
+  background-color: var(--primary-blue) !important;
+  border-color: var(--primary-blue) !important;
+  color: var(--white) !important;
+}
+
+/* Select and Input Focus */
+.ant-select:focus,
+.ant-select-focused .ant-select-selector,
+.ant-input:focus,
+.ant-input-focused {
+  border-color: var(--primary-blue) !important;
+  box-shadow: 0 0 0 2px rgba(31, 71, 136, 0.2) !important;
+}
+
+/* Checkbox and Radio */
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: var(--primary-blue) !important;
+  border-color: var(--primary-blue) !important;
+}
+
+.ant-radio-checked .ant-radio-inner {
+  border-color: var(--primary-blue) !important;
+}
+
+.ant-radio-inner::after {
+  background-color: var(--primary-blue) !important;
+}
+
+/* Tables */
+.ant-table-thead > tr > th {
+  background-color: var(--blue-light) !important;
+  color: var(--white) !important;
+}
+
+/* Tags */
+.ant-tag {
+  border: none !important;
+}
+
+/* Success Actions */
+.ant-btn-success,
+.ant-message-success .anticon,
+.ant-notification-notice-success .ant-notification-notice-icon {
+  color: var(--primary-blue) !important;
+}
+
+/* Loading Spinner */
+.ant-spin-dot-item {
+  background-color: var(--primary-blue) !important;
+}
+
+/* Progress Bar */
+.ant-progress-bg {
+  background-color: var(--primary-blue) !important;
+}
+
+/* Menu Active State */
+.ant-menu-item-selected {
+  background-color: var(--primary-red) !important;
+  color: var(--white) !important;
+}
+
+.ant-menu-item-selected a {
+  color: var(--white) !important;
+}
+
+/* Pagination */
+.ant-pagination-item-active {
+  border-color: var(--primary-blue) !important;
+  background-color: var(--primary-blue) !important;
+}
+
+.ant-pagination-item-active a {
+  color: var(--white) !important;
+}
+
+/* Sidebar Specific Styling */
+.ant-layout-sider {
+  background: var(--primary-blue) !important;
+}
+
+.ant-menu {
+  background: var(--primary-blue) !important;
+  color: var(--white) !important;
+}
+
+.ant-menu-item {
+  color: var(--white) !important;
+}
+
+.ant-menu-submenu-title {
+  color: var(--white) !important;
+}
+
+.ant-menu-item:hover {
+  background-color: var(--blue-hover) !important;
+  color: var(--white) !important;
+}
+
+.ant-menu-submenu:hover > .ant-menu-submenu-title {
+  background-color: var(--blue-hover) !important;
+  color: var(--white) !important;
+}
+
+/* Override any remaining Ant Design blue colors */
+.ant-btn-link {
+  color: var(--primary-blue) !important;
+}
+
+.ant-btn-link:hover {
+  color: var(--blue-hover) !important;
+}

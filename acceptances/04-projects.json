@@ -1,0 +1,1193 @@
+{
+  "module_name": "Projects",
+  "data": [
+    {
+      "code": "<b>PJ01</b>",
+      "feature": "<b>List Projects</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Search</b>:\n- Project Code\n- Business Initiative Name\n- Company",
+              "note": ""
+            },
+            {
+              "text": "<b>Filter</b>:\n- Company\n- Status\n- Division\n- Created Date",
+              "note": ""
+            },
+            {
+              "text": "<b>Sorting ASC,DESC</b>:\n- Project Code\n- Business Initiative Name\n- Company\n- Status\n- Created Date",
+              "note": "Default sorting by created_at"
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Column</b>",
+          "detail": [
+            {
+              "text": "<b>Project Code</b>\n- Hyperlink to detail"
+            },
+            {
+              "text": "<b>Business Initiative Name</b>\n- Text display with ellipsis"
+            },
+            {
+              "text": "<b>Company</b>\n- Text display"
+            },
+            {
+              "text": "<b>Division</b>\n- Text display"
+            },
+            {
+              "text": "<b>Status</b>\n- Tag with color coding"
+            },
+            {
+              "text": "<b>Created Date</b>\n- Date format"
+            }
+          ]
+        },
+        {
+          "info": "<b>Tab Structure</b>",
+          "detail": [
+            {
+              "text": "<b>All Projects Tab</b>:\n- Shows all projects with full columns\n- Includes Division and Created Date columns\n- Full action buttons (Detail, Edit, Delete)",
+              "note": ""
+            },
+            {
+              "text": "<b>Feasibility Study Tab</b>:\n- Shows only feasibility projects\n- Simplified columns focused on financial data\n- Includes CAPEX Estimate and IRR Estimate columns\n- Only Detail action button",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Role</b>: Admin"
+            },
+            {
+              "text": "Default sorting based on most recent data"
+            },
+            {
+              "text": "<b>Action</b>: Detail, Edit, Delete\nBulk Action: Delete"
+            },
+            {
+              "text": "<b>Bulk Action</b>: Delete",
+              "note": "Multiple Data Check"
+            },
+            {
+              "text": "<b>Tab Navigation</b>: Switch between All Projects and Feasibility Study views",
+              "note": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>PJ02</b>",
+      "feature": "<b>Detail Project</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields Section Basic Information</b>",
+          "detail": [
+            {
+              "text": "<b>Project Code</b>:\n- Read Only"
+            },
+            {
+              "text": "<b>Business Initiative Name</b>:\n- Read Only"
+            },
+            {
+              "text": "<b>Company</b>:\n- Read Only"
+            },
+            {
+              "text": "<b>Division</b>:\n- Read Only"
+            },
+            {
+              "text": "<b>Status</b>:\n- Read Only with Tag color"
+            },
+            {
+              "text": "<b>Sync Status</b>:\n- Read Only with Tag color"
+            },
+            {
+              "text": "<b>Last Sync Date</b>:\n- Read Only DateTime format"
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Section Financial Estimates</b>",
+          "detail": [
+            {
+              "text": "<b>Currency</b>:\n- Read Only"
+            },
+            {
+              "text": "<b>CAPEX Estimate</b>:\n- Read Only Currency format"
+            },
+            {
+              "text": "<b>OPEX Estimate (Yearly)</b>:\n- Read Only Currency format"
+            },
+            {
+              "text": "<b>IRR Estimate</b>:\n- Read Only Percentage format"
+            },
+            {
+              "text": "<b>NPV Estimate</b>:\n- Read Only Currency format"
+            },
+            {
+              "text": "<b>Discount Rate</b>:\n- Read Only Percentage format"
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Section Business Partners</b>",
+          "detail": [
+            {
+              "text": "<b>Technology Licensor</b>:\n- Read Only"
+            },
+            {
+              "text": "<b>Raw Material Suppliers</b>:\n- Read Only"
+            },
+            {
+              "text": "<b>Offtaker</b>:\n- Read Only"
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Section Project Objectives</b>",
+          "detail": [
+            {
+              "text": "<b>Sasaran (Penjelasan)</b>:\n- Read Only Text Area"
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Section Supporting Documents</b>",
+          "detail": [
+            {
+              "text": "<b>Document Name</b>:\n- Read Only with File icon"
+            },
+            {
+              "text": "<b>Size</b>:\n- Read Only"
+            },
+            {
+              "text": "<b>Upload Date</b>:\n- Read Only DateTime format"
+            },
+            {
+              "text": "<b>Action</b>:\n- Download Button"
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Section Remarks</b>",
+          "detail": [
+            {
+              "text": "<b>Keterangan</b>:\n- Read Only Text Area"
+            }
+          ]
+        },
+        {
+          "info": "<b>Tab Structure</b>",
+          "detail": [
+            {
+              "text": "<b>Feasibility Study Tab</b>:\n- Form-style display with labeled fields\n- All fields shown as form inputs (read-only)",
+              "note": ""
+            },
+            {
+              "text": "<b>Project Profile Tab</b>:\n- Form-style editable fields\n- Project profile management",
+              "note": ""
+            },
+            {
+              "text": "<b>Project Baseline Tab</b>:\n- Baseline management with versioning\n- Document upload for schedule and cost plans",
+              "note": ""
+            },
+            {
+              "text": "<b>Project Performance Tab</b>:\n- Actual schedule and cost tracking\n- Photo documentation management",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Project Feasibility Tab - Form Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Investment Name</b>:\n- Form field style (read-only)\n- Labeled display",
+              "note": ""
+            },
+            {
+              "text": "<b>Company</b>:\n- Form field style (read-only)\n- Labeled display",
+              "note": ""
+            },
+            {
+              "text": "<b>Investment Code</b>:\n- Form field style (read-only)\n- Labeled display",
+              "note": ""
+            },
+            {
+              "text": "<b>CAPEX (nominal)</b>:\n- Form field style (read-only)\n- Currency format",
+              "note": ""
+            },
+            {
+              "text": "<b>OPEX (Nominal)</b>:\n- Form field style (read-only)\n- Currency format",
+              "note": ""
+            },
+            {
+              "text": "<b>NPV</b>:\n- Form field style (read-only)\n- Currency format",
+              "note": ""
+            },
+            {
+              "text": "<b>IRR</b>:\n- Form field style (read-only)\n- Percentage format",
+              "note": ""
+            },
+            {
+              "text": "<b>Sasaran (penjelasan)</b>:\n- Form field style (read-only)\n- Text area format",
+              "note": ""
+            },
+            {
+              "text": "<b>Teknologi Lisensor</b>:\n- Form field style (read-only)\n- Labeled display",
+              "note": ""
+            },
+            {
+              "text": "<b>Raw Material Supplier</b>:\n- Form field style (read-only)\n- Labeled display",
+              "note": ""
+            },
+            {
+              "text": "<b>Offtaker</b>:\n- Form field style (read-only)\n- Labeled display",
+              "note": ""
+            },
+            {
+              "text": "<b>Dokumen Pendukung</b>:\n- Table with download functionality\n- Document management",
+              "note": ""
+            },
+            {
+              "text": "<b>Keterangan</b>:\n- Form field style (read-only)\n- Text area format",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Section Project Performance</b>",
+          "detail": [
+            {
+              "text": "<b>Project Schedule Actual</b>:\n- Link Preview button\n- Upload button\n- Download Template button",
+              "note": ""
+            },
+            {
+              "text": "<b>Project Cost Actual</b>:\n- Link Preview button\n- Upload button\n- Download Template button",
+              "note": ""
+            },
+            {
+              "text": "<b>Foto Project</b>:\n- Upload button for photos\n- Date picker for photo date\n- Text area for photo description\n- Add Photo button",
+              "note": ""
+            },
+            {
+              "text": "<b>Daftar Foto Project</b>:\n- Table with photo list\n- Columns: Judul Foto, Tanggal Foto, Keterangan, Action\n- Download and Delete actions for each photo",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Project Performance Tab - Form Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Link Preview (Schedule Actual)</b>:\n- Button to view uploaded schedule file\n- Disabled when no file uploaded",
+              "note": ""
+            },
+            {
+              "text": "<b>Upload Button (Schedule Actual)</b>:\n- File upload for schedule documents\n- Accepts: .pdf, .doc, .docx, .xls, .xlsx",
+              "note": ""
+            },
+            {
+              "text": "<b>Download Template (Schedule Actual)</b>:\n- Button to download schedule template",
+              "note": ""
+            },
+            {
+              "text": "<b>Link Preview (Cost Actual)</b>:\n- Button to view uploaded cost file\n- Disabled when no file uploaded",
+              "note": ""
+            },
+            {
+              "text": "<b>Upload Button (Cost Actual)</b>:\n- File upload for cost documents\n- Accepts: .pdf, .doc, .docx, .xls, .xlsx",
+              "note": ""
+            },
+            {
+              "text": "<b>Download Template (Cost Actual)</b>:\n- Button to download cost template",
+              "note": ""
+            },
+            {
+              "text": "<b>Foto Project Upload</b>:\n- Upload button for image files\n- Accepts: image/*\n- Shows uploaded file name",
+              "note": ""
+            },
+            {
+              "text": "<b>Tanggal Foto Project</b>:\n- Date picker for photo date\n- Required for adding photo",
+              "note": ""
+            },
+            {
+              "text": "<b>Keterangan Foto</b>:\n- Text area for photo description\n- Required for adding photo",
+              "note": ""
+            },
+            {
+              "text": "<b>Tambah Foto Button</b>:\n- Button to add new photo\n- Disabled until all fields filled",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Button</b>: Back to List, Edit Project"
+            },
+            {
+              "text": "Display all project information in organized sections"
+            },
+            {
+              "text": "Support document download functionality"
+            },
+            {
+              "text": "Tab-based navigation for different information categories"
+            },
+            {
+              "text": "<b>File Upload</b>: Support for schedule and cost actual documents",
+              "note": ""
+            },
+            {
+              "text": "<b>Photo Management</b>: Upload, view, and delete project photos",
+              "note": ""
+            },
+            {
+              "text": "<b>Template Download</b>: Download templates for schedule and cost reporting",
+              "note": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>PJ05</b>",
+      "feature": "<b>Project Performance Management</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields Section Project Schedule Actual</b>",
+          "detail": [
+            {
+              "text": "<b>Link Preview</b>:\n- Button to view uploaded schedule actual file\n- Shows file info when uploaded",
+              "note": ""
+            },
+            {
+              "text": "<b>Upload Button</b>:\n- Upload schedule actual document\n- File validation for accepted formats",
+              "note": ""
+            },
+            {
+              "text": "<b>Download Template</b>:\n- Download schedule actual template",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Section Project Cost Actual</b>",
+          "detail": [
+            {
+              "text": "<b>Link Preview</b>:\n- Button to view uploaded cost actual file\n- Shows file info when uploaded",
+              "note": ""
+            },
+            {
+              "text": "<b>Upload Button</b>:\n- Upload cost actual document\n- File validation for accepted formats",
+              "note": ""
+            },
+            {
+              "text": "<b>Download Template</b>:\n- Download cost actual template",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Section Foto Project</b>",
+          "detail": [
+            {
+              "text": "<b>Foto Project Upload</b>:\n- Upload image file\n- Shows uploaded file name",
+              "note": ""
+            },
+            {
+              "text": "<b>Tanggal Foto Project</b>:\n- Date picker for photo date\n- Required field",
+              "note": ""
+            },
+            {
+              "text": "<b>Keterangan Foto</b>:\n- Text area for photo description\n- Required field",
+              "note": ""
+            },
+            {
+              "text": "<b>Tambah Foto Button</b>:\n- Add photo to list\n- Validation for required fields",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Section Daftar Foto Project</b>",
+          "detail": [
+            {
+              "text": "<b>Judul Foto</b>:\n- Photo title display",
+              "note": ""
+            },
+            {
+              "text": "<b>Tanggal Foto</b>:\n- Photo date display (DD/MM/YYYY format)",
+              "note": ""
+            },
+            {
+              "text": "<b>Keterangan</b>:\n- Photo description display",
+              "note": ""
+            },
+            {
+              "text": "<b>Action</b>:\n- Download button (disabled when no file)\n- Delete button to remove photo",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>File Upload</b>: Support for .pdf, .doc, .docx, .xls, .xlsx formats",
+              "note": ""
+            },
+            {
+              "text": "<b>Image Upload</b>: Support for image/* formats",
+              "note": ""
+            },
+            {
+              "text": "<b>Form Validation</b>: Required fields for photo upload",
+              "note": ""
+            },
+            {
+              "text": "<b>Dynamic List</b>: Real-time photo list updates",
+              "note": ""
+            },
+            {
+              "text": "<b>File Management</b>: Upload, preview, download, delete functionality",
+              "note": ""
+            },
+            {
+              "text": "<b>Save Functionality</b>: Save all performance data",
+              "note": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>PJ03</b>",
+      "feature": "<b>Create Project</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields Section Basic Information</b>",
+          "detail": [
+            {
+              "text": "<b>Project Code*</b>:\n- Text Field\n- Required",
+              "note": ""
+            },
+            {
+              "text": "<b>Company*</b>:\n- Text Field\n- Required",
+              "note": ""
+            },
+            {
+              "text": "<b>Business Initiative Name*</b>:\n- Text Field\n- Required",
+              "note": ""
+            },
+            {
+              "text": "<b>Division*</b>:\n- Text Field\n- Required",
+              "note": ""
+            },
+            {
+              "text": "<b>Status*</b>:\n- Select Dropdown\n- Options: Active, Pending, Completed, Cancelled\n- Required",
+              "note": ""
+            },
+            {
+              "text": "<b>Sync Status</b>:\n- Select Dropdown\n- Options: Synced, Not Synced, Syncing\n- Disabled",
+              "note": ""
+            },
+            {
+              "text": "<b>Last Sync Date</b>:\n- DateTime Picker\n- Optional",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Section Financial Estimates</b>",
+          "detail": [
+            {
+              "text": "<b>Currency*</b>:\n- Select Dropdown\n- Options: IDR, USD, EUR\n- Required",
+              "note": ""
+            },
+            {
+              "text": "<b>CAPEX Estimate*</b>:\n- Number Input with Currency Format\n- Required\n- Min: 0",
+              "note": ""
+            },
+            {
+              "text": "<b>OPEX Estimate (Yearly)*</b>:\n- Number Input with Currency Format\n- Required\n- Min: 0",
+              "note": ""
+            },
+            {
+              "text": "<b>IRR Estimate*</b>:\n- Number Input with Percentage Format\n- Required\n- Min: 0, Max: 100",
+              "note": ""
+            },
+            {
+              "text": "<b>NPV Estimate*</b>:\n- Number Input with Currency Format\n- Required\n- Min: 0",
+              "note": ""
+            },
+            {
+              "text": "<b>Discount Rate*</b>:\n- Number Input with Percentage Format\n- Required\n- Min: 0, Max: 100",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Section Business Partners</b>",
+          "detail": [
+            {
+              "text": "<b>Technology Licensor*</b>:\n- Text Field\n- Required",
+              "note": ""
+            },
+            {
+              "text": "<b>Raw Material Suppliers*</b>:\n- Text Area\n- Required\n- Placeholder: separated by comma",
+              "note": ""
+            },
+            {
+              "text": "<b>Offtaker*</b>:\n- Text Field\n- Required",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Section Project Objectives</b>",
+          "detail": [
+            {
+              "text": "<b>Sasaran (Penjelasan)*</b>:\n- Text Area\n- Required\n- Rows: 4",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Section Supporting Documents</b>",
+          "detail": [
+            {
+              "text": "<b>Document Upload</b>:\n- Upload Button\n- Table shows uploaded documents",
+              "note": ""
+            },
+            {
+              "text": "<b>Document Table Columns</b>:\n- Document Name (with File icon)\n- Size\n- Upload Date\n- Action (Download, Delete)",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Section Remarks</b>",
+          "detail": [
+            {
+              "text": "<b>Keterangan</b>:\n- Text Area\n- Optional\n- Rows: 4",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Cancel</b>:\n Reset and Back to projects list"
+            },
+            {
+              "text": "<b>Submit</b>\n Save and Display data in the projects list"
+            },
+            {
+              "text": "Form validation with required field checking"
+            },
+            {
+              "text": "Currency and percentage formatting for financial fields"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>PJ04</b>",
+      "feature": "<b>Update Project</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields</b>",
+          "detail": [
+            {
+              "text": "<b>All Fields</b>:\n- Same as Create Project form\n- Pre-filled with existing data",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Cancel</b>:\n Reset and Back to project detail"
+            },
+            {
+              "text": "<b>Save Changes</b>\n Update and Display updated data in project detail"
+            },
+            {
+              "text": "Form pre-populated with current project data"
+            },
+            {
+              "text": "Same validation rules as create form"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>PJ06</b>",
+      "feature": "<b>Project Issues</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields Column</b>",
+          "detail": [
+            {
+              "text": "<b>WBS/Task ID</b>\n- Text display\n- Sortable"
+            },
+            {
+              "text": "<b>Aktivitas di Master Schedule</b>\n- Text display with ellipsis\n- Sortable"
+            },
+            {
+              "text": "<b>Kategori Issue</b>\n- Tag with color coding\n- Sortable\n- Colors: Technical (blue), Logistical (orange), Environmental (green), Resource (purple), Safety (red), Financial (gold), Regulatory (cyan)"
+            },
+            {
+              "text": "<b>Tipe Issue</b>\n- Text display\n- Sortable"
+            },
+            {
+              "text": "<b>Deskripsi Issue</b>\n- Text display with ellipsis\n- Sortable"
+            },
+            {
+              "text": "<b>Progress Update</b>\n- Text display with ellipsis\n- Sortable"
+            },
+            {
+              "text": "<b>Deadline</b>\n- Date format (DD/MM/YYYY)\n- Sortable"
+            },
+            {
+              "text": "<b>PIC</b>\n- Text display\n- Sortable"
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Action</b>",
+          "detail": [
+            {
+              "text": "<b>View</b>:\n- Modal popup with issue details\n- All fields displayed in read-only mode"
+            },
+            {
+              "text": "<b>Edit</b>:\n- Modal popup with editable issue form\n- Pre-filled with existing data"
+            },
+            {
+              "text": "<b>Delete</b>:\n- Confirmation message\n- Remove issue from list"
+            }
+          ]
+        },
+        {
+          "info": "<b>Create Button</b>",
+          "detail": [
+            {
+              "text": "<b>Position</b>:\n- Top right corner inline with table title\n- Primary button with plus icon"
+            },
+            {
+              "text": "<b>Functionality</b>:\n- Opens modal popup for creating new issue\n- Form with all required fields"
+            }
+          ]
+        },
+        {
+          "info": "<b>Modal Form Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Issue Information Section</b>:\n- Nomor Issue/Task ID (dropdown WBS: 1.1.1, 1.1.2, 1.2.1, etc.)\n- Aktivitas di Master Schedule (auto-filled based on WBS)\n- Tanggal Issue (date, default today, editable)\n- Kategori Issue (dropdown: Technical, Logistical, Environmental, Resource, Safety, Financial, Regulatory)\n- Status Issue (dropdown: Open, In Progress, Resolved, Closed, On Hold)\n- Tipe Issue (dropdown: Design Conflict, Supplier Delay, Regulatory Compliance, Manpower Shortage, Training Delay, Budget Issue, Quality Issue, Schedule Delay)",
+              "note": ""
+            },
+            {
+              "text": "<b>Issue Details Section</b>:\n- Deskripsi Issue (text area, required)\n- Dampak Issue (text area, required)\n- PIC (dropdown: employee names)\n- Prioritas Issue (dropdown: Low, Medium, High, Critical)",
+              "note": ""
+            },
+            {
+              "text": "<b>Resolution Information Section</b>:\n- Resolution (text area)\n- Deadline Resolution (date)\n- Deadline (date, required)",
+              "note": ""
+            },
+            {
+              "text": "<b>Update Information Section</b>:\n- Issue Update (text area)\n- Tanggal Update Terkini (date)\n- Progress Update (text)\n- Keterangan (text area)",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Modal Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Create Modal</b>:\n- Title: \"Create New Issue\"\n- Form fields empty except Tanggal Issue (default today)\n- Aktivitas auto-filled when WBS selected\n- Submit button: \"Create Issue\"\n- Cancel button closes modal",
+              "note": ""
+            },
+            {
+              "text": "<b>View Modal</b>:\n- Title: \"Issue Details - [Issue Number]\"\n- All fields displayed in read-only mode\n- Close button only\n- No editing capabilities",
+              "note": ""
+            },
+            {
+              "text": "<b>Edit Modal</b>:\n- Title: \"Edit Issue - [Issue Number]\"\n- Form pre-filled with existing data\n- All fields editable\n- Submit button: \"Save Changes\"\n- Cancel button closes modal",
+              "note": ""
+            },
+            {
+              "text": "<b>Modal Size</b>:\n- Width: 1200px\n- Centered on screen\n- Scrollable body if content exceeds viewport",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Role</b>: Admin, Project Manager, Team Lead"
+            },
+            {
+              "text": "Issues list displayed as tab within project detail page"
+            },
+            {
+              "text": "Create button positioned inline with table title at top right"
+            },
+            {
+              "text": "All actions (View, Edit, Delete) open modal popups"
+            },
+            {
+              "text": "Form validation for required fields in create/edit modes"
+            },
+            {
+              "text": "Auto-population of Aktivitas based on WBS selection"
+            },
+            {
+              "text": "Color-coded tags for Kategori Issue in list view"
+            },
+            {
+              "text": "Date formatting for deadline display (DD/MM/YYYY)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>PJ07</b>",
+      "feature": "<b>Project Risks</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields Column</b>",
+          "detail": [
+            {
+              "text": "<b>Taksonomi Resiko</b>\n- Text display (Risk Number: RSK-001)\n- Sortable"
+            },
+            {
+              "text": "<b>Deskripsi Resiko</b>\n- Text display with ellipsis\n- Sortable"
+            },
+            {
+              "text": "<b>Dampak Resiko</b>\n- Text display with ellipsis\n- Sortable"
+            },
+            {
+              "text": "<b>Level Resiko</b>\n- Tag with color coding showing Priority and Score\n- Format: Priority (Score/25)\n- Colors: Critical (red), High (orange), Medium (gold), Low (green)\n- Sortable"
+            },
+            {
+              "text": "<b>Mitigasi Resiko</b>\n- Text display with ellipsis\n- Sortable"
+            },
+            {
+              "text": "<b>Deadline</b>\n- Date format (DD/MM/YYYY)\n- Sortable"
+            },
+            {
+              "text": "<b>PIC</b>\n- Text display\n- Sortable"
+            },
+            {
+              "text": "<b>Status</b>\n- Tag with color coding\n- Colors: Open (red), In Progress (blue), Completed (green), On Hold (orange), Cancelled (default)\n- Sortable"
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Action</b>",
+          "detail": [
+            {
+              "text": "<b>View</b>:\n- Modal popup with risk details\n- All fields displayed in read-only mode"
+            },
+            {
+              "text": "<b>Edit</b>:\n- Modal popup with editable risk form\n- Pre-filled with existing data"
+            },
+            {
+              "text": "<b>Delete</b>:\n- Confirmation message\n- Remove risk from list"
+            }
+          ]
+        },
+        {
+          "info": "<b>Create Button</b>",
+          "detail": [
+            {
+              "text": "<b>Position</b>:\n- Top right corner inline with table title\n- Primary button with plus icon"
+            },
+            {
+              "text": "<b>Functionality</b>:\n- Opens modal popup for creating new risk\n- Form with all required fields"
+            }
+          ]
+        },
+        {
+          "info": "<b>Modal Form Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Risk Identification Section</b>:\n- Nomor Resiko (text, auto-generated RSK-001 format)\n- Tanggal Identifikasi Resiko (date, default today)\n- Kategori Resiko (dropdown: Technical, Financial, Operational, Environmental, Safety, Regulatory, Strategic, Reputational)\n- Probabilitas Resiko (dropdown: Very Low, Low, Medium, High, Very High)",
+              "note": ""
+            },
+            {
+              "text": "<b>Risk Description Section</b>:\n- Deskripsi Resiko (text area, required)\n- Dampak Resiko (text area, required)\n- Tingkat Dampak (dropdown: Very Low, Low, Medium, High, Critical)\n- Skor Resiko (calculated automatically, readonly)\n- Prioritas Resiko (dropdown: Low, Medium, High, Critical, auto-calculated based on score)",
+              "note": ""
+            },
+            {
+              "text": "<b>Mitigation Plan Section</b>:\n- Rencana Mitigasi (text area, required)\n- Status Mitigasi (dropdown: Open, In Progress, Completed, On Hold, Cancelled)\n- Deadline Mitigasi (date, required)",
+              "note": ""
+            },
+            {
+              "text": "<b>Update Information Section</b>:\n- Update Mitigasi (text area, required)\n- Tanggal Update Terkini (date, default today)\n- PIC (text)\n- Keterangan (text area)",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Modal Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Create Modal</b>:\n- Title: \"Create New Risk\"\n- Form fields empty except dates (default today)\n- Skor Resiko and Prioritas calculated automatically\n- Submit button: \"Create Risk\"\n- Cancel button closes modal",
+              "note": ""
+            },
+            {
+              "text": "<b>View Modal</b>:\n- Title: \"Risk Details - [Risk Number]\"\n- All fields displayed in read-only mode\n- Close button only\n- No editing capabilities",
+              "note": ""
+            },
+            {
+              "text": "<b>Edit Modal</b>:\n- Title: \"Edit Risk - [Risk Number]\"\n- Form pre-filled with existing data\n- Nomor Resiko disabled (cannot be changed)\n- Skor Resiko and Prioritas recalculated on field changes\n- Submit button: \"Save Changes\"\n- Cancel button closes modal",
+              "note": ""
+            },
+            {
+              "text": "<b>Modal Size</b>:\n- Width: 1200px\n- Centered on screen\n- Scrollable body if content exceeds viewport",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Risk Score Calculation</b>",
+          "detail": [
+            {
+              "text": "<b>Probability Mapping</b>:\n- Very Low: 1\n- Low: 2\n- Medium: 3\n- High: 4\n- Very High: 5",
+              "note": ""
+            },
+            {
+              "text": "<b>Impact Mapping</b>:\n- Very Low: 1\n- Low: 2\n- Medium: 3\n- High: 4\n- Critical: 5",
+              "note": ""
+            },
+            {
+              "text": "<b>Score Formula</b>:\n- Risk Score = Probability × Impact\n- Maximum score: 25 (5×5)\n- Display format: Score/25",
+              "note": ""
+            },
+            {
+              "text": "<b>Priority Mapping</b>:\n- Score ≥ 20: Critical\n- Score ≥ 15: High\n- Score ≥ 8: Medium\n- Score < 8: Low",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Role</b>: Admin, Project Manager, Risk Manager"
+            },
+            {
+              "text": "Risks list displayed as tab within project detail page (next to Project Issues)"
+            },
+            {
+              "text": "Create button positioned inline with table title at top right"
+            },
+            {
+              "text": "All actions (View, Edit, Delete) open modal popups"
+            },
+            {
+              "text": "Form validation for required fields in create/edit modes"
+            },
+            {
+              "text": "Automatic risk score calculation based on probability and impact"
+            },
+            {
+              "text": "Automatic priority assignment based on calculated risk score"
+            },
+            {
+              "text": "Color-coded tags for Status and Level Resiko in list view"
+            },
+            {
+              "text": "Date formatting for deadline display (DD/MM/YYYY)"
+            },
+            {
+              "text": "Risk number auto-generation with RSK-XXX format"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>PJ08</b>",
+      "feature": "<b>Current Activities</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields Column</b>",
+          "detail": [
+            {
+              "text": "<b>Task ID</b>\n- Text display (TASK-001 format)\n- Sortable"
+            },
+            {
+              "text": "<b>Fase</b>\n- Tag with color coding\n- Sortable\n- Colors: Perencanaan (blue), Pengembangan (green), In HPO (orange), FID (purple)"
+            },
+            {
+              "text": "<b>Aktivitas Bulan Sebelumnya</b>\n- Text display with ellipsis\n- Sortable"
+            },
+            {
+              "text": "<b>Status Sebelumnya</b>\n- Tag with color coding\n- Sortable\n- Colors: Not Started (default), In Progress (blue), Completed (green), On Hold (orange), Cancelled (red)"
+            },
+            {
+              "text": "<b>Aktivitas Bulan Berjalan</b>\n- Text display with ellipsis\n- Sortable"
+            },
+            {
+              "text": "<b>Status Berjalan</b>\n- Tag with color coding\n- Sortable\n- Colors: Not Started (default), In Progress (blue), Completed (green), On Hold (orange), Cancelled (red)"
+            },
+            {
+              "text": "<b>PIC</b>\n- Text display\n- Sortable"
+            },
+            {
+              "text": "<b>Milestone</b>\n- Tag showing Yes/No\n- Colors: Yes (gold), No (default)\n- Sortable"
+            },
+            {
+              "text": "<b>Tanggal Aktivitas</b>\n- Date format (DD/MM/YYYY)\n- Sortable"
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Action</b>",
+          "detail": [
+            {
+              "text": "<b>View</b>:\n- Modal popup with activity details\n- All fields displayed in read-only mode"
+            },
+            {
+              "text": "<b>Edit</b>:\n- Modal popup with editable activity form\n- Pre-filled with existing data"
+            },
+            {
+              "text": "<b>Delete</b>:\n- Confirmation message\n- Remove activity from list"
+            }
+          ]
+        },
+        {
+          "info": "<b>Create Button</b>",
+          "detail": [
+            {
+              "text": "<b>Position</b>:\n- Top right corner inline with table title\n- Primary button with plus icon\n- Label: \"Add New Activity\""
+            },
+            {
+              "text": "<b>Functionality</b>:\n- Opens modal popup for creating new activity\n- Form with all required fields"
+            }
+          ]
+        },
+        {
+          "info": "<b>Modal Form Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Activity Information Section</b>:\n- Bulan Pelaporan (date range picker, required)\n- Fase (dropdown: Perencanaan, Pengembangan, In HPO, FID, required)\n- Aktivitas (text area, required)\n- PIC Aktivitas (dropdown: employee names, required)",
+              "note": ""
+            },
+            {
+              "text": "<b>Progress Information Section</b>:\n- Aktivitas Bulan Sebelumnya (text area)\n- Status Bulan Sebelumnya (dropdown: Not Started, In Progress, Completed, On Hold, Cancelled)\n- Aktivitas Bulan Berjalan (text area, required)\n- Status Bulan Berjalan (dropdown: Not Started, In Progress, Completed, On Hold, Cancelled, required)",
+              "note": ""
+            },
+            {
+              "text": "<b>Documentation Section</b>:\n- Foto (multiple image upload)\n- Keterangan Foto (text area)\n- Milestone (checkbox)\n- Tanggal Aktivitas (date, required)",
+              "note": ""
+            },
+            {
+              "text": "<b>Additional Information Section</b>:\n- Latest Modified (date)\n- Keterangan (text area)",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Modal Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Create Modal</b>:\n- Title: \"Create New Activity\"\n- Form fields empty\n- Task ID auto-generated (TASK-001 format)\n- Submit button: \"Create Activity\"\n- Cancel button closes modal",
+              "note": ""
+            },
+            {
+              "text": "<b>View Modal</b>:\n- Title: \"Activity Details - [Task ID]\"\n- All fields displayed in read-only mode\n- Close button only\n- No editing capabilities",
+              "note": ""
+            },
+            {
+              "text": "<b>Edit Modal</b>:\n- Title: \"Edit Activity - [Task ID]\"\n- Form pre-filled with existing data\n- Task ID disabled (cannot be changed)\n- Submit button: \"Save Changes\"\n- Cancel button closes modal",
+              "note": ""
+            },
+            {
+              "text": "<b>Modal Size</b>:\n- Width: 1200px\n- Centered on screen\n- Scrollable body if content exceeds viewport",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>File Upload Features</b>",
+          "detail": [
+            {
+              "text": "<b>Multiple Photo Upload</b>:\n- Support for multiple image files\n- Accepts: image/* formats\n- Shows uploaded file names\n- Remove individual photos option",
+              "note": ""
+            },
+            {
+              "text": "<b>Photo Description</b>:\n- Text area for photo descriptions\n- Linked to uploaded photos",
+              "note": ""
+            },
+            {
+              "text": "<b>Date Range Picker</b>:\n- For Bulan Pelaporan field\n- Select start and end dates\n- Format: DD/MM/YYYY - DD/MM/YYYY",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Role</b>: Admin, Project Manager, Team Lead"
+            },
+            {
+              "text": "Activities list displayed as tab within project detail page (next to Project Risks)"
+            },
+            {
+              "text": "Create button positioned inline with table title at top right"
+            },
+            {
+              "text": "All actions (View, Edit, Delete) open modal popups"
+            },
+            {
+              "text": "Form validation for required fields in create/edit modes"
+            },
+            {
+              "text": "Task ID auto-generation with TASK-XXX format"
+            },
+            {
+              "text": "Color-coded tags for Fase and Status fields in list view"
+            },
+            {
+              "text": "Date formatting for Tanggal Aktivitas display (DD/MM/YYYY)"
+            },
+            {
+              "text": "Multiple photo upload support with descriptions"
+            },
+            {
+              "text": "Milestone checkbox for important activities"
+            },
+            {
+              "text": "Progress tracking between previous month and current month"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>PJ09</b>",
+      "feature": "<b>Data Input Approval</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields Section Data Input Approval</b>",
+          "detail": [
+            {
+              "text": "<b>Status Display</b>:\n- Inline layout with \"Status Saat Ini:\" label\n- Tag with color coding (Approved: green, Rejected: red, Pending: orange)\n- Compact horizontal layout",
+              "note": ""
+            },
+            {
+              "text": "<b>Approval Buttons</b>:\n- Inline with status display (right side)\n- Approve button (small, green, with check icon)\n- Reject button (small, red, with close icon)\n- Only visible when status is Pending",
+              "note": ""
+            },
+            {
+              "text": "<b>Status Notes</b>:\n- Shows inline when status is Approved/Rejected\n- Displays approval/rejection notes\n- Italic text style",
+              "note": ""
+            },
+            {
+              "text": "<b>Compact Design</b>:\n- No section title \"Data Input Approval\"\n- Minimal padding and spacing\n- Light gray background with border",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Approval Modal</b>",
+          "detail": [
+            {
+              "text": "<b>Modal Title</b>:\n- Dynamic based on action (Approve/Reject Data Input)\n- Icon colored based on action type",
+              "note": ""
+            },
+            {
+              "text": "<b>Confirmation Message</b>:\n- Warning about action consequences\n- Color-coded background (green for approve, red for reject)",
+              "note": ""
+            },
+            {
+              "text": "<b>Notes Field</b>:\n- Text area for approval/rejection notes\n- Optional for approval, required for rejection\n- Validation error shown for missing rejection notes",
+              "note": ""
+            },
+            {
+              "text": "<b>Modal Actions</b>:\n- Approve/Reject button (color-coded)\n- Cancel button\n- Button styling matches action type",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Approval Status Display</b>",
+          "detail": [
+            {
+              "text": "<b>Pending Status</b>:\n- Orange tag with \"Pending\" label\n- Shows approve/reject buttons\n- Instruction text for reviewing data",
+              "note": ""
+            },
+            {
+              "text": "<b>Approved Status</b>:\n- Green tag with \"Approved\" label\n- Shows success message with checkmark\n- Displays approval notes if provided\n- Instruction text about processed status",
+              "note": ""
+            },
+            {
+              "text": "<b>Rejected Status</b>:\n- Red tag with \"Rejected\" label\n- Shows rejection message with X mark\n- Displays rejection notes\n- Instruction text about processed status",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Positioning</b>",
+          "detail": [
+            {
+              "text": "<b>Location</b>:\n- Above all data input tabs\n- First section in Data Input tab\n- Separate from tab content",
+              "note": ""
+            },
+            {
+              "text": "<b>Layout</b>:\n- Full-width section\n- Clear visual separation from tabs\n- Consistent with other section styling",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Initial State</b>:\n- Status defaults to \"Pending\"\n- Approve/Reject buttons visible\n- No notes displayed initially",
+              "note": ""
+            },
+            {
+              "text": "<b>Approve Action</b>:\n- Opens approval modal with green theme\n- Notes optional (default empty)\n- On confirm: status changes to \"Approved\"\n- Shows success message\n- Displays provided notes if any",
+              "note": ""
+            },
+            {
+              "text": "<b>Reject Action</b>:\n- Opens rejection modal with red theme\n- Notes required (validation enforced)\n- On confirm: status changes to \"Rejected\"\n- Shows error message\n- Displays rejection notes",
+              "note": ""
+            },
+            {
+              "text": "<b>Modal Validation</b>:\n- Approve: always valid (notes optional)\n- Reject: requires notes before submission\n- Clear error messages for validation failures",
+              "note": ""
+            },
+            {
+              "text": "<b>State Persistence</b>:\n- Approval status maintained during session\n- Notes preserved and displayed\n- Buttons hidden after decision",
+              "note": ""
+            },
+            {
+              "text": "<b>User Feedback</b>:\n- Success message for approval\n- Error message for rejection\n- Clear visual status indicators",
+              "note": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

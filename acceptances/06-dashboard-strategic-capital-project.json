@@ -1,0 +1,133 @@
+{
+  "module_name": "Dashboard - Strategic Capital Project",
+  "created_at": "2025-10-20T21:06:00Z",
+  "updated_at": "2025-10-21T10:56:00Z",
+  "data": [
+    {
+      "code": "<b>DSCP01</b>",
+      "feature": "<b>Strategic Capital Project Dashboard</b>",
+      "acceptances": [
+        {
+          "info": "<b>Main Dashboard Layout</b>",
+          "detail": [
+            {
+              "text": "<b>Page Structure</b>:\n- Title integrated within main Section component\n- Organized into multiple subsections with titles\n- Clean sectioned layout with proper spacing",
+              "note": ""
+            },
+            {
+              "text": "<b>Loading State</b>:\n- Shows spinner while loading data\n- Graceful error handling\n- Loading prop passed to main Section",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Filters Section</b>",
+          "detail": [
+            {
+              "text": "<b>Filter Controls</b>:\n- Company: Multi-select dropdown (PTFI, PTBA, Inalum, Antam, Vale, Timah)\n- Project Phase: Multi-select dropdown (FEL 2, FEL 3, Detail Engineering, Construction, Commissioning, Operate Optimize)\n- Commodity: Multi-select dropdown (Nickel, Aluminium, Gold, Tin, Copper)\n- Date Range: Date range picker",
+              "note": ""
+            },
+            {
+              "text": "<b>Filter Actions</b>:\n- Reset Filters button with reload icon\n- Apply Filters button with filter icon (primary style)\n- Responsive grid layout for filter controls",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Summary Information Section</b>",
+          "detail": [
+            {
+              "text": "<b>Project Counter</b>:\n- Shows X of Y Projects counter\n- Secondary text styling\n- Positioned in dedicated section",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Investment and Performance Overview Section</b>",
+          "detail": [
+            {
+              "text": "<b>Total Investment</b>:\n- Donut chart visualization\n- Shows Upstream, Midstream, Downstream distribution\n- Brand-aligned colors (#1890ff, #52c41a, #fa8c16)",
+              "note": ""
+            },
+            {
+              "text": "<b>Total Project</b>:\n- Large number display showing total projects (22)\n- SPI indicator with color coding (green if ≥1, red if <1)\n- CPI indicator with color coding (green if ≥1, red if <1)\n- High Risk count in red (#f5222d)",
+              "note": ""
+            },
+            {
+              "text": "<b>Company Distribution</b>:\n- Donut chart showing company breakdown\n- Companies: PTFI, PTBA, Inalum, Antam, Vale, Timah\n- Brand-consistent color palette\n- Color-coded with legend",
+              "note": ""
+            },
+            {
+              "text": "<b>Project Objectives</b>:\n- Vertical bar chart showing objectives A, B, C, D, E\n- Primary brand color (#1890ff)\n- Tooltips show full objective names",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Detailed Analysis Section</b>",
+          "detail": [
+            {
+              "text": "<b>Project Phase</b>:\n- Vertical bar chart\n- Phases: FEL 2, FEL 3, Detail Engineering, Construction, Commissioning, Operate Optimize\n- Brand-consistent color palette\n- Rotated labels for better readability",
+              "note": ""
+            },
+            {
+              "text": "<b>Commodity Distribution</b>:\n- Vertical bar chart (improved from horizontal)\n- Commodities: Nickel, Aluminium, Gold, Tin, Copper\n- Consistent with other chart layouts\n- Rotated labels with proper spacing",
+              "note": ""
+            },
+            {
+              "text": "<b>Project Type</b>:\n- Vertical bar chart\n- Types: New First Pass Substitute, New Missing Facilities, Major Modifications, Minor Plant Relocation, Life Support Relocation\n- Brand-aligned color scheme\n- Rotated labels with smaller font for readability",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Design & Brand Guidelines</b>",
+          "detail": [
+            {
+              "text": "<b>Color Scheme</b>:\n- Primary Blue: #19315a\n- Primary Red: #c41e3a\n- Blue Light: #2a4a7a\n- Blue Hover: #21426e\n- Red Light: #d14458\n- Blue Dark: #0f1e3a",
+              "note": "Updated to match official brand guidelines from theme.css"
+            },
+            {
+              "text": "<b>Chart Consistency</b>:\n- All bar charts use vertical orientation\n- Consistent tooltip styling\n- Uniform spacing and margins\n- Responsive design for all screen sizes",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Data & Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Data Source</b>:\n- Uses dummy data from _data/index.js\n- Simulated API call with loading state\n- Filter state management with useState",
+              "note": ""
+            },
+            {
+              "text": "<b>Filter Functionality</b>:\n- State-managed filter values\n- Reset filters functionality\n- Apply filters action (UI ready for backend integration)\n- Responsive filter layout",
+              "note": ""
+            },
+            {
+              "text": "<b>Responsive Design</b>:\n- Grid layout with responsive columns\n- Charts resize automatically\n- Mobile-friendly layout\n- Section-based organization",
+              "note": ""
+            },
+            {
+              "text": "<b>Interactivity</b>:\n- Tooltips on all charts\n- Legends for pie charts\n- Hover effects on chart elements\n- Filter control interactions",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Navigation</b>",
+          "detail": [
+            {
+              "text": "<b>Menu Integration</b>:\n- Available under Dashboard > Strategic Capital Project\n- Accessible to all roles",
+              "note": ""
+            },
+            {
+              "text": "<b>Route</b>:\n- Path: /strategic-capital-project\n- Protected route within dashboard structure",
+              "note": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

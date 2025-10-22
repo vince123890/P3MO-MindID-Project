@@ -1,0 +1,193 @@
+{
+  "module_name": "Master Data - Feasibility Studies",
+  "updated_at": "2025-10-21T02:46:00Z",
+  "data": [
+    {
+      "code": "<b>FS01</b>",
+      "feature": "<b>List Master Data Feasibility Studies</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Search</b>:\n- Project Code\n- Business Initiative Name\n- Company",
+              "note": ""
+            },
+            {
+              "text": "<b>Filter</b>:\n- Company\n- Status\n- Sync Status\n- Last Sync Date (Date Range)",
+              "note": ""
+            },
+            {
+              "text": "<b>Sorting ASC,DESC</b>:\n- Project Code\n- Business Initiative Name\n- Company\n- CAPEX Estimate\n- IRR Estimate\n- NPV Estimate\n- Status\n- Sync Status\n- Last Sync Date",
+              "note": "Default sorting by created_at"
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Column</b>",
+          "detail": [
+            {
+              "text": "<b>Project Code</b>\n- Hyperlink to detail"
+            },
+            {
+              "text": "<b>Business Initiative Name</b>\n- Read Only"
+            },
+            {
+              "text": "<b>Company</b>\n- Read Only"
+            },
+            {
+              "text": "<b>CAPEX Estimate</b>\n- Currency format (IDR)\n- Read Only"
+            },
+            {
+              "text": "<b>IRR Estimate</b>\n- Percentage format\n- Read Only"
+            },
+            {
+              "text": "<b>NPV Estimate</b>\n- Currency format (IDR)\n- Read Only"
+            },
+            {
+              "text": "<b>Status</b>\n- Tag format with color\n- Green: Approved, Orange: Under Review, Blue: Draft"
+            },
+            {
+              "text": "<b>Sync Status</b>\n- Tag format with color\n- Green: Synced, Orange: Pending, Red: Failed"
+            },
+            {
+              "text": "<b>Last Sync Date</b>\n- Date format\n- Read Only"
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Role</b>: Admin"
+            },
+            {
+              "text": "Default sorting based on most recent data"
+            },
+            {
+              "text": "<b>Action</b>: Detail, Tambah Approver & Viewer"
+            },
+            {
+              "text": "<b>Sync Manual Button</b>: Primary button to synchronize data manually"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>FS02</b>",
+      "feature": "<b>Detail Master Data Feasibility Study</b>",
+      "acceptances": [
+        {
+          "info": "<b>Basic Information Section</b>",
+          "detail": [
+            {
+              "text": "<b>Investment Name</b>:\n- Text Field\n- Read Only",
+              "note": ""
+            },
+            {
+              "text": "<b>Company</b>:\n- Text Field\n- Read Only",
+              "note": ""
+            },
+            {
+              "text": "<b>Investment Code</b>:\n- Text Field\n- Read Only",
+              "note": ""
+            },
+            {
+              "text": "<b>Project Code</b>:\n- Text Field\n- Read Only",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Financial Information Section</b>",
+          "detail": [
+            {
+              "text": "<b>CAPEX</b>:\n- Currency format (IDR)\n- Read Only",
+              "note": ""
+            },
+            {
+              "text": "<b>OPEX</b>:\n- Currency format (IDR)\n- Read Only",
+              "note": ""
+            },
+            {
+              "text": "<b>NPV</b>:\n- Currency format (IDR)\n- Read Only",
+              "note": ""
+            },
+            {
+              "text": "<b>IRR</b>:\n- Percentage format\n- Read Only",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Project Details Section</b>",
+          "detail": [
+            {
+              "text": "<b>Sasaran</b>:\n- Text Area\n- Read Only",
+              "note": ""
+            },
+            {
+              "text": "<b>Teknologi Lisensor</b>:\n- Text Field\n- Read Only",
+              "note": ""
+            },
+            {
+              "text": "<b>Raw Material Supplier</b>:\n- Text Field\n- Read Only",
+              "note": ""
+            },
+            {
+              "text": "<b>Offtaker</b>:\n- Text Field\n- Read Only",
+              "note": ""
+            },
+            {
+              "text": "<b>Dokumen Pendukung</b>:\n- Text Area\n- Read Only",
+              "note": ""
+            },
+            {
+              "text": "<b>Keterangan</b>:\n- Text Area\n- Read Only",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Status Information Section</b>",
+          "detail": [
+            {
+              "text": "<b>Status</b>:\n- Tag format with color\n- Green: Approved, Orange: Under Review, Blue: Draft",
+              "note": ""
+            },
+            {
+              "text": "<b>Sync Status</b>:\n- Tag format with color\n- Green: Synced, Orange: Pending, Red: Failed",
+              "note": ""
+            },
+            {
+              "text": "<b>Last Sync Date</b>:\n- Date format\n- Read Only",
+              "note": ""
+            },
+            {
+              "text": "<b>Business Initiative Name</b>:\n- Text Field\n- Read Only",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Role</b>: Admin"
+            },
+            {
+              "text": "<b>Tambah Approver & Viewer Button</b>: Add approver and viewer access"
+            },
+            {
+              "text": "<b>Navigation</b>: Back to list with breadcrumb"
+            },
+            {
+              "text": "All fields are read-only for display purposes"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

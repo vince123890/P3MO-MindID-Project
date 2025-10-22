@@ -17,8 +17,11 @@ import { RoleList as roleList } from "./_utils/role-list";
 function Layout() {
   const { switchRole, signout, session } = useSession();
   const role = session?.user?.role;
-  const [rolePopup, setRolePopup] = useState();
+  const [rolePopup, setRolePopup] = useState(false);
   const path = useResolvedPath();
+
+  // Safe pathname extraction to prevent object-to-primitive conversion
+  const pathname = typeof path?.pathname === 'string' ? path.pathname : '/';
 
   const {
     token: { colorWhite },
@@ -113,7 +116,7 @@ function Layout() {
         width: 250,
         menu: filteredItems,
         theme: "light",
-        defaultSelectedKeys: [path.pathname],
+        defaultSelectedKeys: [pathname],
       }}
     >
       <Outlet />

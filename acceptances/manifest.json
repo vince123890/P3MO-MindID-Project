@@ -1,0 +1,82 @@
+{
+  "files": [
+    {
+      "sheetName": "Projects",
+      "url": "/acceptances/04-projects.json",
+      "created_at": "2025-01-19T00:00:00.000Z",
+      "update_at": "2025-01-20T04:20:00.000Z"
+    },
+    {
+      "sheetName": "Dashboard - Project Anggota Holding",
+      "url": "/acceptances/05-dashboard-project-anggota-holding.json",
+      "created_at": "2025-01-20T20:34:00.000Z",
+      "update_at": "2025-01-20T20:34:00.000Z"
+    },
+    {
+      "sheetName": "Dashboard - Strategic Capital Project",
+      "url": "/acceptances/06-dashboard-strategic-capital-project.json",
+      "created_at": "2025-10-20T21:06:00Z",
+      "update_at": "2025-10-20T21:06:00Z"
+    },
+    {
+      "sheetName": "Dashboard - Komparasi Project",
+      "url": "/acceptances/07-dashboard-komparasi-project.json",
+      "created_at": "2025-01-20T21:23:47.000Z",
+      "update_at": "2025-01-20T21:23:47.000Z"
+    },
+    {
+      "sheetName": "Dashboard - Initiative Project Pipeline",
+      "url": "/acceptances/08-dashboard-initiative-project-pipeline.json",
+      "created_at": "2025-01-20T21:41:00.000Z",
+      "update_at": "2025-01-20T21:41:00.000Z"
+    },
+    {
+      "sheetName": "User Management - Users",
+      "url": "/acceptances/09-user-management-users.json",
+      "created_at": "2025-10-20T22:06:19.000Z",
+      "update_at": "2025-10-20T22:06:19.000Z"
+    },
+    {
+      "sheetName": "Master Data - Feasibility Studies",
+      "url": "/acceptances/10-master-data-feasibility-studies.json",
+      "created_at": "2025-10-21T02:46:00Z",
+      "update_at": "2025-10-21T02:46:00Z"
+    },
+    {
+      "sheetName": "Master Data - Perusahaan",
+      "url": "/acceptances/11-master-data-perusahaans.json",
+      "created_at": "2025-10-21T03:19:31.000Z",
+      "update_at": "2025-10-21T03:19:31.000Z"
+    },
+    {
+      "sheetName": "Master Data - Kurs",
+      "url": "/acceptances/12-master-data-kurs.json",
+      "created_at": "2025-10-21T03:36:14.000Z",
+      "update_at": "2025-10-21T03:36:14.000Z"
+    },
+    {
+      "sheetName": "Master Data - Issue/Resiko",
+      "url": "/acceptances/13-master-data-issue-risks.json",
+      "created_at": "2025-10-21T04:27:00.000Z",
+      "update_at": "2025-10-21T04:27:00.000Z"
+    },
+    {
+      "sheetName": "Master Data - Template Messaging",
+      "url": "/acceptances/14-master-data-template-messaging.json",
+      "created_at": "2025-10-21T04:56:43.000Z",
+      "update_at": "2025-10-21T04:56:43.000Z"
+    },
+    {
+      "sheetName": "Messaging",
+      "url": "/acceptances/15-messaging.json",
+      "created_at": "2025-10-21T05:45:33.000Z",
+      "update_at": "2025-10-21T05:45:33.000Z"
+    },
+    {
+      "sheetName": "Laporan",
+      "url": "/acceptances/16-laporan.json",
+      "created_at": "2025-10-21T21:35:30.000Z",
+      "update_at": "2025-10-21T21:35:30.000Z"
+    }
+  ]
+}

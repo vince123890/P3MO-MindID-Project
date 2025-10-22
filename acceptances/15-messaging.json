@@ -1,0 +1,242 @@
+{
+  "module_name": "Messaging",
+  "data": [
+    {
+      "code": "<b>MSG01</b>",
+      "feature": "<b>List Messaging</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Search</b>:\n- Subject",
+              "note": ""
+            },
+            {
+              "text": "<b>Filter</b>:\n- Via (Apps, Email, Keduanya)\n- Status (Sent, Draft)",
+              "note": ""
+            },
+            {
+              "text": "<b>Sorting ASC,DESC</b>:\n- Subject\n- Via\n- Created At",
+              "note": "Default sorting by created_at"
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Column</b>",
+          "detail": [
+            {
+              "text": "<b>Subject</b>\n- Hyperlink to detail"
+            },
+            {
+              "text": "<b>To</b>\n- Read Only\n- Shows recipient names (truncated if multiple)"
+            },
+            {
+              "text": "<b>CC</b>\n- Read Only\n- Shows CC recipient names (truncated if multiple)"
+            },
+            {
+              "text": "<b>Via</b>\n- Read Only\n- Tag component with colors (Apps=Orange, Email=Green, Keduanya=Purple)"
+            },
+            {
+              "text": "<b>Created At</b>\n- Read Only\n- Formatted date"
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Role</b>: Admin"
+            },
+            {
+              "text": "Default sorting based on most recent data"
+            },
+            {
+              "text": "<b>Action</b>: Detail, Edit, Delete"
+            },
+            {
+              "text": "<b>Bulk Action</b>: Delete",
+              "note": "Multiple Data Check"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>MSG02</b>",
+      "feature": "<b>Compose Message</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields Recipients</b>",
+          "detail": [
+            {
+              "text": "<b>To*</b>:\n- Multi-select dropdown\n- Required\n- Data from active users only\n- Searchable",
+              "note": ""
+            },
+            {
+              "text": "<b>CC</b>:\n- Multi-select dropdown\n- Optional\n- Data from active users only\n- Searchable",
+              "note": ""
+            },
+            {
+              "text": "<b>Via*</b>:\n- Select dropdown\n- Required\n- Options: Apps, Email, Keduanya",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Content</b>",
+          "detail": [
+            {
+              "text": "<b>Subject*</b>:\n- Text Area (2 rows)\n- Required\n- Minimum 5 characters",
+              "note": ""
+            },
+            {
+              "text": "<b>Add Template</b>:\n- Select dropdown\n- Optional\n- Data from active templates\n- When selected, loads content to Body field",
+              "note": "Template integration feature"
+            },
+            {
+              "text": "<b>Body*</b>:\n- WYSIWYG Editor (Future: TinyMCE)\n- Currently: Large Text Area with HTML support\n- Required\n- Minimum 10 characters",
+              "note": "Supports HTML formatting and placeholders"
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Status</b>: Automatically set to 'Sent' when composing"
+            },
+            {
+              "text": "<b>Template Selection</b>: When template selected, body content automatically filled"
+            },
+            {
+              "text": "<b>Cancel</b>:\n Reset and Back to messaging list"
+            },
+            {
+              "text": "<b>Send Message</b>\n Save and Display success message"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>MSG03</b>",
+      "feature": "<b>Message Detail</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields Information Section</b>",
+          "detail": [
+            {
+              "text": "<b>Subject</b>\n- Read Only"
+            },
+            {
+              "text": "<b>To</b>\n- Read Only\n- Shows all recipient names separated by comma"
+            },
+            {
+              "text": "<b>CC</b>\n- Read Only\n- Shows all CC recipient names separated by comma"
+            },
+            {
+              "text": "<b>Via</b>\n- Read Only\n- Tag component with color"
+            },
+            {
+              "text": "<b>Template Used</b>\n- Read Only\n- Shows template name if used, 'None' if not"
+            },
+            {
+              "text": "<b>Status</b>\n- Read Only\n- Tag component with color (Sent=Green, Draft=Orange)"
+            },
+            {
+              "text": "<b>Created At</b>\n- Read Only\n- Formatted date"
+            },
+            {
+              "text": "<b>Updated At</b>\n- Read Only\n- Formatted date"
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Message Content Section</b>",
+          "detail": [
+            {
+              "text": "<b>HTML Preview</b>\n- Rendered HTML content\n- Shows formatted message as it would appear"
+            },
+            {
+              "text": "<b>Raw HTML Code</b>\n- Shows raw HTML source\n- Monospace font\n- Scrollable view"
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Action Buttons</b>: Edit, Delete"
+            },
+            {
+              "text": "<b>Delete</b>: Confirmation and redirect to list"
+            },
+            {
+              "text": "<b>Edit</b>: Navigate to update page"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>MSG04</b>",
+      "feature": "<b>Edit Message</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields Recipients</b>",
+          "detail": [
+            {
+              "text": "<b>To*</b>:\n- Multi-select dropdown\n- Required\n- Data from active users only\n- Searchable\n- Pre-filled with current values",
+              "note": ""
+            },
+            {
+              "text": "<b>CC</b>:\n- Multi-select dropdown\n- Optional\n- Data from active users only\n- Searchable\n- Pre-filled with current values",
+              "note": ""
+            },
+            {
+              "text": "<b>Via*</b>:\n- Select dropdown\n- Required\n- Options: Apps, Email, Keduanya\n- Pre-filled with current value",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Content</b>",
+          "detail": [
+            {
+              "text": "<b>Subject*</b>:\n- Text Area (2 rows)\n- Required\n- Minimum 5 characters\n- Pre-filled with current value",
+              "note": ""
+            },
+            {
+              "text": "<b>Add Template</b>:\n- Select dropdown\n- Optional\n- Data from active templates\n- Not pre-selected in edit mode\n- When selected, loads content to Body field",
+              "note": "Template integration feature"
+            },
+            {
+              "text": "<b>Body*</b>:\n- WYSIWYG Editor (Future: TinyMCE)\n- Currently: Large Text Area with HTML support\n- Required\n- Minimum 10 characters\n- Pre-filled with current value",
+              "note": "Supports HTML formatting and placeholders"
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Template Selection</b>: When template selected, body content automatically replaced"
+            },
+            {
+              "text": "<b>Cancel</b>:\n Reset and Back to message detail or list"
+            },
+            {
+              "text": "<b>Update Message</b>\n Update data and Display success message"
+            },
+            {
+              "text": "<b>Form Validation</b>: All required fields must be filled"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "created_at": "2025-10-21T05:45:33.000Z",
+  "updated_at": "2025-10-21T05:45:33.000Z"
+}

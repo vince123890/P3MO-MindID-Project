@@ -1,0 +1,120 @@
+{
+  "module_name": "User Management - Users",
+  "data": [
+    {
+      "code": "<b>UM01</b>",
+      "feature": "<b>List User Management - Daftar User</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Search</b>:\n- Nama User\n- Email\n- Perusahaan",
+              "note": ""
+            },
+            {
+              "text": "<b>Sorting ASC,DESC</b>:\n- Nama User\n- Role\n- Email\n- Perusahaan\n- Status\n- Created At",
+              "note": "Default sorting by created_at"
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Column</b>",
+          "detail": [
+            {
+              "text": "<b>Nama User</b>\n- Read Only"
+            },
+            {
+              "text": "<b>Role</b>\n- Read Only\n- Displayed as tag with color"
+            },
+            {
+              "text": "<b>Email</b>\n- Read Only"
+            },
+            {
+              "text": "<b>Perusahaan</b>\n- Read Only"
+            },
+            {
+              "text": "<b>Status</b>\n- Read Only\n- Displayed as tag (Active: green, Inactive: red)"
+            },
+            {
+              "text": "<b>Created At</b>\n- Read Only\n- Format: DD/MM/YYYY"
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Role</b>: Admin only"
+            },
+            {
+              "text": "Default sorting based on most recent data"
+            },
+            {
+              "text": "<b>Action</b>: Detail"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>UM02</b>",
+      "feature": "<b>Detail User</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields</b>",
+          "detail": [
+            {
+              "text": "<b>NIP</b>:\n- Read Only\n- Text Field",
+              "note": ""
+            },
+            {
+              "text": "<b>NIK</b>:\n- Read Only\n- Text Field",
+              "note": ""
+            },
+            {
+              "text": "<b>Nama User</b>:\n- Read Only\n- Text Field",
+              "note": ""
+            },
+            {
+              "text": "<b>Email</b>:\n- Read Only\n- Text Field",
+              "note": ""
+            },
+            {
+              "text": "<b>Role</b>:\n- Read Only\n- Displayed as tag with color",
+              "note": ""
+            },
+            {
+              "text": "<b>Username</b>:\n- Read Only\n- Text Field",
+              "note": ""
+            },
+            {
+              "text": "<b>Perusahaan</b>:\n- Read Only\n- Text Field",
+              "note": ""
+            },
+            {
+              "text": "<b>Status</b>:\n- Read Only\n- Displayed as tag (Active: green, Inactive: red)",
+              "note": ""
+            },
+            {
+              "text": "<b>Created At</b>:\n- Read Only\n- Format: DD/MM/YYYY",
+              "note": ""
+            },
+            {
+              "text": "<b>Updated At</b>:\n- Read Only\n- Format: DD/MM/YYYY",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Back button</b>:\n- Returns to Daftar User list page"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

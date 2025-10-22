@@ -1,0 +1,172 @@
+{
+  "module_name": "Master Data - Kurs",
+  "data": [
+    {
+      "code": "<b>MK01</b>",
+      "feature": "<b>List Master Data Kurs</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Search</b>:\n- Nilai Kurs",
+              "note": ""
+            },
+            {
+              "text": "<b>Filter</b>:\n- Status\n- Tanggal",
+              "note": ""
+            },
+            {
+              "text": "<b>Sorting ASC,DESC</b>:\n- Nilai Kurs\n- Tanggal\n- Status\n- Created At",
+              "note": "Default sorting by created_at"
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Column</b>",
+          "detail": [
+            {
+              "text": "<b>Nilai Kurs</b>\n- Display format: USD 1 = IDR [nilai]\n- Hyperlink to detail"
+            },
+            {
+              "text": "<b>Tanggal</b>\n- Formatted date"
+            },
+            {
+              "text": "<b>Status</b>\n- Tag with color (Active: green, Inactive: red)"
+            },
+            {
+              "text": "<b>Created At</b>\n- Formatted date"
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Role</b>: Admin"
+            },
+            {
+              "text": "Default sorting based on most recent data"
+            },
+            {
+              "text": "<b>Action</b>: Detail, Edit, Delete"
+            },
+            {
+              "text": "<b>Bulk Action</b>: Delete",
+              "note": "Multiple Data Check"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>MK02</b>",
+      "feature": "<b>Detail Master Data Kurs</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Nilai Kurs (USD ke IDR)</b>:\n- Read Only\n- Display format: IDR [nilai]",
+              "note": ""
+            },
+            {
+              "text": "<b>Tanggal</b>:\n- Read Only\n- Formatted date",
+              "note": ""
+            },
+            {
+              "text": "<b>Status</b>:\n- Tag with color (Active: green, Inactive: red)",
+              "note": ""
+            },
+            {
+              "text": "<b>Created At</b>:\n- Read Only\n- Formatted date",
+              "note": ""
+            },
+            {
+              "text": "<b>Updated At</b>:\n- Read Only\n- Formatted date",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Role</b>: Admin"
+            },
+            {
+              "text": "<b>Action</b>: Edit, Delete"
+            },
+            {
+              "text": "Go back to list page"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>MK03</b>",
+      "feature": "<b>Create Master Data Kurs</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Nilai Kurs (USD ke IDR)*</b>:\n- Text Field\n- Required\n- Numeric validation",
+              "note": ""
+            },
+            {
+              "text": "<b>Tanggal*</b>:\n- Date Picker\n- Required",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Cancel</b>:\n Reset and Back to list kurs"
+            },
+            {
+              "text": "<b>Submit</b>\n Save and Display data in the kurs list with Status automatically set to Active"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>MK04</b>",
+      "feature": "<b>Update Master Data Kurs</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Nilai Kurs (USD ke IDR)*</b>:\n- Text Field\n- Required\n- Numeric validation\n- Pre-filled with current data",
+              "note": ""
+            },
+            {
+              "text": "<b>Tanggal*</b>:\n- Date Picker\n- Required\n- Pre-filled with current data",
+              "note": ""
+            },
+            {
+              "text": "<b>Status*</b>:\n- Select Field\n- Required\n- Options: Active, Inactive\n- Pre-filled with current data",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Cancel</b>:\n Reset and Back to list kurs"
+            },
+            {
+              "text": "<b>Save Changes</b>\n Update and Display updated data in the kurs list"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

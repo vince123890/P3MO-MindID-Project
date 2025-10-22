@@ -10,6 +10,9 @@ import { middleware } from "./middleware";
 import { ReactQueryProvider } from "./libs/react-query/react-query-provider";
 import "antd/dist/reset.css";
 import "admiral/style.css";
+import "./styles/theme.css";
+import "./styles/sidebar.css";
+import "leaflet/dist/leaflet.css";
 import "./utils/surpress-warning";
 
 const files = import.meta.glob("./app/**/*(page|layout).jsx");
@@ -30,16 +33,9 @@ const router = createBrowserRouter([
 
 const rootElement = document.getElementById("root");
 createRoot(rootElement).render(
-  // eslint-disable-next-line no-undef
-  process.env.NODE_ENV === "development" ? (
+  <StrictMode>
     <ReactQueryProvider>
       <RouterProvider router={router} />
     </ReactQueryProvider>
-  ) : (
-    <StrictMode>
-      <ReactQueryProvider>
-        <RouterProvider router={router} />
-      </ReactQueryProvider>
-    </StrictMode>
-  ),
+  </StrictMode>
 );

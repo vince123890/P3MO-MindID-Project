@@ -1,0 +1,154 @@
+{
+  "module_name": "Dashboard - Initiative Project Pipeline",
+  "updated_at": "2025-10-21T11:17:00.000Z",
+  "data": [
+    {
+      "code": "<b>IPP01</b>",
+      "feature": "<b>Dashboard Initiative Project Pipeline</b>",
+      "acceptances": [
+        {
+          "info": "<b>Chart Reading Guide Section</b>",
+          "detail": [
+            {
+              "text": "<b>Panduan Membaca Chart</b>:\n- Comprehensive explanation in Indonesian\n- Circle size interpretation based on investment scale\n- Color coding for mining commodity types\n- Mining business pipeline stages explanation",
+              "note": "Added detailed guide for mining business context and chart interpretation"
+            },
+            {
+              "text": "<b>Investment Scale Explanation</b>:\n- Small Circle: < $300M USD (Small Scale Mining)\n- Medium Circle: $300M - $600M USD (Medium Scale Mining)\n- Large Circle: > $600M USD (Large Scale Mining)",
+              "note": "Clear investment thresholds for mining projects"
+            },
+            {
+              "text": "<b>Mining Business Stages</b>:\n- In HPO: Geological potential identification\n- FID: Final investment decision after feasibility\n- Detail Engineering: Technical design phase\n- Construction: Infrastructure development\n- Commissioning: Equipment testing & optimization\n- Operate Optimize: Full production & efficiency\n- Ore Processing: Advanced mineral processing",
+              "note": "Complete mining project lifecycle explanation"
+            }
+          ]
+        },
+        {
+          "info": "<b>Pipeline Visualization</b>",
+          "detail": [
+            {
+              "text": "<b>Stage Display</b>:\n- In HPO\n- FID\n- Detail Engineering\n- Construction\n- Commissioning\n- Operate Optimize\n- Ore Processing",
+              "note": "Mining industry standard pipeline stages with brand color scheme"
+            },
+            {
+              "text": "<b>Project Indicators</b>:\n- Circle size represents investment scale (35px/50px/65px)\n- Circle color represents mining commodity type\n- Priority numbers or text inside circles\n- Enhanced tooltips with detailed project information",
+              "note": "Improved visual hierarchy with commodity-specific colors"
+            },
+            {
+              "text": "<b>Stage Layout</b>:\n- Horizontal scrollable view with brand colors\n- Each stage with unique gradient background\n- Projects distributed vertically within stages\n- Info icons with stage descriptions\n- Project count display per stage",
+              "note": "Enhanced design with mining business context and brand alignment"
+            },
+            {
+              "text": "<b>Enhanced Tooltips</b>:\n- Company name with commodity color\n- Project name and budget in USD\n- Commodity type with colored tag\n- Progress bar with completion percentage\n- Stage and priority information",
+              "note": "Comprehensive project details on hover"
+            }
+          ]
+        },
+        {
+          "info": "<b>Mining Commodity Colors</b>",
+          "detail": [
+            {
+              "text": "<b>Gold</b>: #FFD700 - Precious Metal Mining",
+              "note": "Traditional gold color for precious metals"
+            },
+            {
+              "text": "<b>Copper</b>: #CD7F32 - Base Metal & Infrastructure",
+              "note": "Bronze color representing copper mining"
+            },
+            {
+              "text": "<b>Nickel</b>: #c41e3a - Stainless Steel & EV Battery",
+              "note": "Red color aligned with brand palette"
+            },
+            {
+              "text": "<b>Coal</b>: #2a4a7a - Energy & Steel Production",
+              "note": "Dark blue from brand colors"
+            },
+            {
+              "text": "<b>Tin</b>: #21426e - Electronics & Packaging",
+              "note": "Navy blue from brand palette"
+            },
+            {
+              "text": "<b>Bauxite</b>: #d14458 - Aluminum Production",
+              "note": "Pink from brand color scheme"
+            },
+            {
+              "text": "<b>Aluminum</b>: #0f1e3a - Transportation & Construction",
+              "note": "Dark navy from brand colors"
+            }
+          ]
+        },
+        {
+          "info": "<b>Project Development Phases</b>",
+          "detail": [
+            {
+              "text": "<b>Initiation Phase</b>:\n- Mining projects in concept stage\n- Commodity-based color coding\n- Enhanced card design with brand gradients",
+              "note": "Improved visual design with mining context"
+            },
+            {
+              "text": "<b>Planning Phase</b>:\n- Projects in planning and design stage\n- Organized by mining commodity type\n- Enhanced typography and spacing",
+              "note": "Better organization and visual hierarchy"
+            },
+            {
+              "text": "<b>Execution Phase</b>:\n- Active mining projects in development\n- Multiple commodity types\n- Priority-based organization\n- Enhanced visual indicators",
+              "note": "Comprehensive execution phase display with improved UX"
+            }
+          ]
+        },
+        {
+          "info": "<b>Comprehensive Legend & Context</b>",
+          "detail": [
+            {
+              "text": "<b>Mining Commodity Types</b>:\n- Complete commodity legend with business context\n- Color-coded circles with descriptions\n- Industry application explanations",
+              "note": "Enhanced legend with mining business knowledge"
+            },
+            {
+              "text": "<b>Project Investment Scale</b>:\n- Visual size comparison\n- Investment threshold explanations\n- Project type descriptions (Regional/Major/Mega projects)",
+              "note": "Clear investment scale visualization"
+            },
+            {
+              "text": "<b>Mining Industry Insights</b>:\n- Total active mining projects count\n- Total investment pipeline value\n- Mining commodity types count\n- Brand-colored statistics cards",
+              "note": "Key performance indicators for mining portfolio"
+            }
+          ]
+        },
+        {
+          "info": "<b>Brand Alignment & Design</b>",
+          "detail": [
+            {
+              "text": "<b>Brand Color Scheme</b>:\n- Primary: #19315a (Navy Blue)\n- Secondary: #c41e3a (Red)\n- Supporting colors: #2a4a7a, #21426e, #d14458, #0f1e3a",
+              "note": "Consistent with company brand guidelines"
+            },
+            {
+              "text": "<b>Enhanced Visual Design</b>:\n- Gradient backgrounds for stages\n- Improved shadows and borders\n- Better spacing and typography\n- Enhanced hover effects and animations",
+              "note": "Professional mining industry dashboard appearance"
+            },
+            {
+              "text": "<b>Mining Business Context</b>:\n- Industry-specific terminology\n- Proper mining project lifecycle representation\n- Commodity-focused organization\n- Investment scale appropriate for mining industry",
+              "note": "Tailored for mining business operations"
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Role</b>: All users can access mining project pipeline"
+            },
+            {
+              "text": "<b>Loading State</b>: Shows spinner while mining data loads"
+            },
+            {
+              "text": "<b>Responsive Design</b>: Adapts to different screen sizes with horizontal scroll"
+            },
+            {
+              "text": "<b>Interactive Elements</b>: Enhanced tooltips, hover effects, and information icons"
+            },
+            {
+              "text": "<b>Mining Context</b>: Specialized for mining industry with appropriate terminology and metrics"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+/* Sidebar Menu Styling - Blue and Red Theme */
+
+/* Sidebar Background */
+.ant-layout-sider {
+  background: var(--primary-blue, #19315a) !important;
+}
+
+/* Menu Background and Text */
+.ant-menu {
+  background: var(--primary-blue, #19315a) !important;
+  color: var(--white, #ffffff) !important;
+  border-right: none !important;
+}
+
+/* Menu Items */
+.ant-menu-item,
+.ant-menu-submenu-title {
+  color: var(--white, #ffffff) !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+/* Menu Item Hover */
+.ant-menu-item:hover,
+.ant-menu-submenu:hover > .ant-menu-submenu-title {
+  background-color: var(--blue-hover, #21426e) !important;
+  color: var(--white, #ffffff) !important;
+}
+
+/* Selected Menu Item - Red Highlight */
+.ant-menu-item-selected {
+  background-color: var(--primary-red, #c41e3a) !important;
+  color: var(--white, #ffffff) !important;
+}
+
+.ant-menu-item-selected:hover {
+  background-color: var(--red-hover, #b01a32) !important;
+  color: var(--white, #ffffff) !important;
+}
+
+/* All Sidebar Links - White Color */
+.ant-menu a,
+.ant-menu a:link,
+.ant-menu a:visited,
+.ant-menu a:hover,
+.ant-menu a:active,
+.ant-menu a:focus {
+  color: var(--white, #ffffff) !important;
+  text-decoration: none !important;
+}
+
+/* Sidebar Links in Selected Items */
+.ant-menu-item-selected a,
+.ant-menu-item-selected a:link,
+.ant-menu-item-selected a:visited,
+.ant-menu-item-selected a:hover,
+.ant-menu-item-selected a:active,
+.ant-menu-item-selected a:focus {
+  color: var(--white, #ffffff) !important;
+  text-decoration: none !important;
+}
+
+/* Submenu Items */
+.ant-menu-submenu .ant-menu-item {
+  padding-left: 48px !important;
+  background: transparent !important;
+}
+
+.ant-menu-submenu .ant-menu-item:hover {
+  background-color: var(--blue-hover, #21426e) !important;
+}
+
+.ant-menu-submenu .ant-menu-item-selected {
+  background-color: var(--primary-red, #c41e3a) !important;
+}
+
+/* Menu Icons */
+.ant-menu-item .anticon,
+.ant-menu-submenu-title .anticon {
+  color: var(--white, #ffffff) !important;
+}
+
+/* Submenu Arrow */
+.ant-menu-submenu-arrow {
+  color: var(--white, #ffffff) !important;
+}
+
+/* Ensure no blue default colors remain */
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: var(--primary-red, #c41e3a) !important;
+}
+
+/* Override any Ant Design inline styles */
+.ant-menu-item[style*="background-color"] {
+  background-color: transparent !important;
+}
+
+.ant-menu-item-selected[style*="background-color"] {
+  background-color: var(--primary-red, #c41e3a) !important;
+}

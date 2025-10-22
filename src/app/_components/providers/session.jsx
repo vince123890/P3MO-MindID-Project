@@ -43,7 +43,7 @@ const SessionProvider = ({ children }) => {
         SessionUser.set(res.data);
 
         setTimeout(() => {
-          navigate("/dashboard");
+          navigate("/project-anggota-holding");
         }, 600);
       },
       onError: () => {
@@ -52,20 +52,40 @@ const SessionProvider = ({ children }) => {
     });
   };
 
-  const signout = () => {
-    setStatus("unauthenticated");
-    setSessionData(undefined);
-    SessionUser.remove();
-    SessionToken.remove();
-    navigate("/auth/login");
+  const signout = (options = {}) => {
+    try {
+      setStatus("unauthenticated");
+      setSessionData(undefined);
+      SessionUser.remove();
+      SessionToken.remove();
+      
+      // Safe navigation with fallback
+      const redirectPath = typeof options?.callbackUrl === 'string' ? options.callbackUrl : "/auth/login";
+      navigate(String(redirectPath));
+    } catch (error) {
+      console.warn("Error during signout:", error);
+      // Fallback navigation
+      window.location.href = "/auth/login";
+    }
   };
 
   const handleSwitchRole = (role) => {
-    const session = sessionData;
-    const user = { ...session.user, role };
-    setSessionData({ ...session, user });
-    SessionUser.set({ ...session, user });
-    navigate("/dashboard");
+    try {
+      if (!sessionData || !role) {
+        console.warn("Invalid session data or role for switch");
+        return;
+      }
+      
+      const session = { ...sessionData };
+      const user = { ...session.user, role: String(role) };
+      const newSessionData = { ...session, user };
+      
+      setSessionData(newSessionData);
+      SessionUser.set(newSessionData);
+      navigate("/project-anggota-holding");
+    } catch (error) {
+      console.warn("Error switching role:", error);
+    }
   };
 
   return (

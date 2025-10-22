@@ -1,0 +1,122 @@
+{
+  "module_name": "Dashboard - Komparasi Project",
+  "created_at": "2025-01-20T21:23:47.000Z",
+  "updated_at": "2025-01-20T21:23:47.000Z",
+  "data": [
+    {
+      "code": "<b>DKP01</b>",
+      "feature": "<b>Dashboard Komparasi Project</b>",
+      "acceptances": [
+        {
+          "info": "<b>Tab Navigation</b>",
+          "detail": [
+            {
+              "text": "<b>Total CAPEX</b>:\n- Displays bar chart comparing Total CAPEX across all projects\n- Values in millions ($M)\n- Consistent color scheme per project",
+              "note": ""
+            },
+            {
+              "text": "<b>Duration</b>:\n- Displays bar chart comparing project duration\n- Values in months\n- Consistent color scheme per project",
+              "note": ""
+            },
+            {
+              "text": "<b>%Progress Fisik R</b>:\n- Displays bar chart comparing physical progress (Rencana)\n- Values in percentage (%)\n- Consistent color scheme per project",
+              "note": ""
+            },
+            {
+              "text": "<b>%Progress Fisik A</b>:\n- Displays bar chart comparing physical progress (Aktual)\n- Values in percentage (%)\n- Consistent color scheme per project",
+              "note": ""
+            },
+            {
+              "text": "<b>Anggaran Terserap R</b>:\n- Displays bar chart comparing budget absorption (Rencana)\n- Values in millions ($M)\n- Consistent color scheme per project",
+              "note": ""
+            },
+            {
+              "text": "<b>Anggaran Terserap A</b>:\n- Displays bar chart comparing budget absorption (Aktual)\n- Values in millions ($M)\n- Consistent color scheme per project",
+              "note": ""
+            },
+            {
+              "text": "<b>SPI</b>:\n- Displays bar chart comparing Schedule Performance Index\n- Values as index (decimal)\n- Consistent color scheme per project",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Chart Features</b>",
+          "detail": [
+            {
+              "text": "<b>Interactive Bar Chart</b>:\n- Responsive design\n- Hover tooltips showing exact values\n- Color-coded bars per project\n- Grid lines for better readability",
+              "note": ""
+            },
+            {
+              "text": "<b>Project Labels</b>:\n- X-axis shows project names (Project 1-18)\n- Rotated 45 degrees for better readability\n- Consistent font size and color",
+              "note": ""
+            },
+            {
+              "text": "<b>Y-axis Scaling</b>:\n- Dynamic scaling based on data values\n- Appropriate labels with units\n- Grid lines for reference",
+              "note": ""
+            },
+            {
+              "text": "<b>Tooltip Information</b>:\n- Shows project name\n- Shows metric value with proper formatting\n- Includes currency/unit symbols where applicable",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Summary Information</b>",
+          "detail": [
+            {
+              "text": "<b>Project Count</b>:\n- Displays total number of projects (18)\n- Always visible at bottom of dashboard",
+              "note": ""
+            },
+            {
+              "text": "<b>Current Metric</b>:\n- Shows currently selected comparison metric\n- Updates when tabs are switched",
+              "note": ""
+            },
+            {
+              "text": "<b>Unit Display</b>:\n- Shows unit of measurement for current metric\n- Displays 'Index' for dimensionless values like SPI",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Visual Design</b>",
+          "detail": [
+            {
+              "text": "<b>Consistent Colors</b>:\n- Each project maintains the same color across all charts\n- 18 different colors for visual distinction\n- Professional color palette",
+              "note": ""
+            },
+            {
+              "text": "<b>Chart Area</b>:\n- Fixed height (500px) for consistency\n- Light gray background\n- Rounded corners\n- Proper padding and margins",
+              "note": ""
+            },
+            {
+              "text": "<b>Tab Design</b>:\n- Card-style tabs\n- Large size for easy clicking\n- Clear active state indication",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Role</b>: All users can access this dashboard",
+              "note": ""
+            },
+            {
+              "text": "<b>Default View</b>: Opens with Total CAPEX tab selected",
+              "note": ""
+            },
+            {
+              "text": "<b>Tab Switching</b>:\n- Instant switching between different metrics\n- Chart data updates immediately\n- Summary information updates accordingly",
+              "note": ""
+            },
+            {
+              "text": "<b>Data Display</b>:\n- All 18 projects shown on every chart\n- Values formatted appropriately (currency, percentage, index)\n- Consistent scaling for comparison",
+              "note": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

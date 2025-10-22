@@ -193,22 +193,31 @@ function createRoute(args) {
 
 export function getRouteSegmentsFromFilePath(
   filePath,
-  transformer = (segment, prevSegment) =>
-    `${prevSegment}${separator}${getFileNameWithoutExtension(segment)}`,
+  transformer = (segment, prevSegment) => {
+    const segmentStr = String(segment || "");
+    const prevSegmentStr = String(prevSegment || "");
+    return `${prevSegmentStr}${separator}${getFileNameWithoutExtension(segmentStr)}`;
+  },
 ) {
-  const segments = filePath
-    .replace("/app", "")
-    .split("/")
-    .filter((segment) => !segment.startsWith("(index)") && !segment.startsWith("_"))
-    .map((segment) => {
-      if (segment.startsWith(".")) return "/";
-      if (segment.startsWith("("))
-        return getParamFromSegment(segment).replace("(", "").replace(")", "") + "?";
-      if (segment.startsWith("[")) return getParamFromSegment(segment);
-      return segment;
-    });
+  try {
+    const segments = String(filePath || "")
+      .replace("/app", "")
+      .split("/")
+      .filter((segment) => segment && !segment.startsWith("(index)") && !segment.startsWith("_"))
+      .map((segment) => {
+        const segmentStr = String(segment || "");
+        if (segmentStr.startsWith(".")) return "/";
+        if (segmentStr.startsWith("("))
+          return getParamFromSegment(segmentStr).replace("(", "").replace(")", "") + "?";
+        if (segmentStr.startsWith("[")) return getParamFromSegment(segmentStr);
+        return segmentStr;
+      });
 
-  return getRouteSegments(segments[0], segments, transformer);
+    return getRouteSegments(segments[0], segments, transformer);
+  } catch (error) {
+    console.warn("Error in getRouteSegmentsFromFilePath:", error);
+    return [];
+  }
 }
 
 function getFileNameWithoutExtension(file) {

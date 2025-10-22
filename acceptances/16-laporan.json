@@ -1,0 +1,139 @@
+{
+  "module_name": "Laporan",
+  "updated_at": "2025-10-21T21:35:30.000Z",
+  "data": [
+    {
+      "code": "<b>LP01</b>",
+      "feature": "<b>Generator Laporan Dinamis</b>",
+      "acceptances": [
+        {
+          "info": "<b>Form Generator Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Pilih Project*</b>:\n- Dropdown Select\n- Data dari existing projects\n- Format: Project Code - Business Initiative Name\n- Searchable dropdown",
+              "note": "Required field"
+            },
+            {
+              "text": "<b>Periode Laporan*</b>:\n- Date Range Picker\n- Format: DD/MM/YYYY\n- Placeholder: Tanggal Mulai - Tanggal Selesai",
+              "note": "Required field"
+            },
+            {
+              "text": "<b>Generate Laporan Button</b>:\n- Primary button with FileText icon\n- Loading state saat generating\n- Text: 'Generate Laporan' / 'Generating...'",
+              "note": ""
+            },
+            {
+              "text": "<b>Reset Button</b>:\n- Secondary button\n- Clear semua form fields dan preview",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Role</b>: Admin"
+            },
+            {
+              "text": "<b>Generate Process</b>:\n- Loading 1.5 detik (simulate API call)\n- Auto preview PDF setelah generate\n- Success message: 'Laporan berhasil di-generate!'"
+            },
+            {
+              "text": "<b>PDF Preview</b>:\n- Menggunakan file: 'docs/Laporan bulan Oktober.pdf'\n- PDF Viewer dengan toolbar lengkap\n- Height: 700px, Width: 100%"
+            },
+            {
+              "text": "<b>Error Handling</b>:\n- Validation untuk required fields\n- Error message jika generate gagal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>LP02</b>",
+      "feature": "<b>Preview dan Actions Laporan</b>",
+      "acceptances": [
+        {
+          "info": "<b>Preview Section</b>",
+          "detail": [
+            {
+              "text": "<b>Header Information</b>:\n- Nama file laporan\n- Periode: DD/MM/YYYY - DD/MM/YYYY\n- Generated timestamp: DD/MM/YYYY HH:mm",
+              "note": ""
+            },
+            {
+              "text": "<b>Action Buttons</b>:\n- Print Laporan (Primary button dengan PrinterOutlined icon)\n- Download PDF (Secondary button dengan DownloadOutlined icon)",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>PDF Viewer Features</b>",
+          "detail": [
+            {
+              "text": "<b>Navigation Controls</b>:\n- Previous/Next page arrows\n- Page input number\n- Page counter: 'Page X of Y'",
+              "note": ""
+            },
+            {
+              "text": "<b>Zoom Controls</b>:\n- Zoom In (+) / Zoom Out (-) buttons\n- Zoom percentage display\n- Range: 50% - 300%",
+              "note": ""
+            },
+            {
+              "text": "<b>Action Controls</b>:\n- Download button with download icon\n- Print button with print icon\n- Fullscreen toggle button",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Print Action</b>:\n- Success notification dengan format: 'Laporan periode [Bulan] [Tahun] berhasil dicetak'\n- Open PDF di new window untuk print\n- Bulan dalam Bahasa Indonesia"
+            },
+            {
+              "text": "<b>Download Action</b>:\n- Download file PDF\n- Filename format: '[Report Name].pdf'\n- Success message: 'Laporan berhasil didownload!'"
+            },
+            {
+              "text": "<b>Reset Functionality</b>:\n- Clear form fields\n- Hide preview section\n- Reset generated report state"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>LP03</b>",
+      "feature": "<b>Data Integration</b>",
+      "acceptances": [
+        {
+          "info": "<b>Project Data Source</b>",
+          "detail": [
+            {
+              "text": "<b>Project Dropdown</b>:\n- Data dari existing projects module\n- Display: Project Code - Business Initiative Name\n- Searchable by project code atau name",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Report Generation</b>",
+          "detail": [
+            {
+              "text": "<b>Prototype Logic</b>:\n- Selalu generate menggunakan 'docs/Laporan bulan Oktober.pdf'\n- Filename dinamis berdasarkan periode yang dipilih\n- Format: 'Laporan [Bulan] [Tahun] - [Project Name]'",
+              "note": "Prototype only"
+            },
+            {
+              "text": "<b>Date Processing</b>:\n- Convert user selected dates ke format yang tepat\n- Generate month name dalam Bahasa Indonesia\n- Extract year dari selected dates",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Form Validation</b>:\n- Required validation untuk Project selection\n- Required validation untuk Date range\n- Error messages dalam Bahasa Indonesia"
+            },
+            {
+              "text": "<b>State Management</b>:\n- Loading state during generation\n- Preview state management\n- Form reset functionality"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

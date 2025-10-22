@@ -1,0 +1,203 @@
+{
+  "module_name": "Master Data - Perusahaan",
+  "data": [
+    {
+      "code": "<b>MP01</b>",
+      "feature": "<b>List Master Data Perusahaan</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Search</b>:\n- Nama Perusahaan",
+              "note": ""
+            },
+            {
+              "text": "<b>Filter</b>:\n- Status\n- Created Date",
+              "note": ""
+            },
+            {
+              "text": "<b>Sorting ASC,DESC</b>:\n- Nama Perusahaan\n- Email\n- No Telepon\n- Status\n- Created At",
+              "note": "Default sorting by created_at"
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Column</b>",
+          "detail": [
+            {
+              "text": "<b>Perusahaan</b>\n- Hyperlink to detail"
+            },
+            {
+              "text": "<b>Email</b>\n- Read Only"
+            },
+            {
+              "text": "<b>No Telepon</b>\n- Read Only"
+            },
+            {
+              "text": "<b>Status</b>\n- Tag with color (Active: green, Inactive: red)"
+            },
+            {
+              "text": "<b>Created At</b>\n- Formatted date"
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Role</b>: Admin"
+            },
+            {
+              "text": "Default sorting based on most recent data"
+            },
+            {
+              "text": "<b>Action</b>: Detail, Edit, Delete"
+            },
+            {
+              "text": "<b>Bulk Action</b>: Delete",
+              "note": "Multiple Data Check"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>MP02</b>",
+      "feature": "<b>Detail Master Data Perusahaan</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Nama Perusahaan</b>:\n- Read Only",
+              "note": ""
+            },
+            {
+              "text": "<b>Alamat Perusahaan</b>:\n- Read Only\n- Span 2 columns",
+              "note": ""
+            },
+            {
+              "text": "<b>Email</b>:\n- Read Only",
+              "note": ""
+            },
+            {
+              "text": "<b>No. Telepon</b>:\n- Read Only",
+              "note": ""
+            },
+            {
+              "text": "<b>Status</b>:\n- Tag with color (Active: green, Inactive: red)",
+              "note": ""
+            },
+            {
+              "text": "<b>Created At</b>:\n- Formatted date",
+              "note": ""
+            },
+            {
+              "text": "<b>Updated At</b>:\n- Formatted date",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Role</b>: Admin"
+            },
+            {
+              "text": "<b>Action</b>: Edit, Delete"
+            },
+            {
+              "text": "Go back to list page"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>MP03</b>",
+      "feature": "<b>Create Master Data Perusahaan</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Nama Perusahaan*</b>:\n- Text Field\n- Required",
+              "note": ""
+            },
+            {
+              "text": "<b>Alamat Perusahaan*</b>:\n- TextArea Field\n- Required\n- Max 500 characters\n- Show character count",
+              "note": ""
+            },
+            {
+              "text": "<b>Email*</b>:\n- Email Field\n- Required\n- Email validation",
+              "note": ""
+            },
+            {
+              "text": "<b>No. Telepon*</b>:\n- Text Field\n- Required\n- Phone number validation",
+              "note": ""
+            },
+            {
+              "text": "<b>Status*</b>:\n- Select Field\n- Required\n- Options: Active, Inactive",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Cancel</b>:\n Reset and Back to list perusahaan"
+            },
+            {
+              "text": "<b>Submit</b>\n Save and Display data in the perusahaan list"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>MP04</b>",
+      "feature": "<b>Update Master Data Perusahaan</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Nama Perusahaan*</b>:\n- Text Field\n- Required\n- Pre-filled with current data",
+              "note": ""
+            },
+            {
+              "text": "<b>Alamat Perusahaan*</b>:\n- TextArea Field\n- Required\n- Max 500 characters\n- Show character count\n- Pre-filled with current data",
+              "note": ""
+            },
+            {
+              "text": "<b>Email*</b>:\n- Email Field\n- Required\n- Email validation\n- Pre-filled with current data",
+              "note": ""
+            },
+            {
+              "text": "<b>No. Telepon*</b>:\n- Text Field\n- Required\n- Phone number validation\n- Pre-filled with current data",
+              "note": ""
+            },
+            {
+              "text": "<b>Status*</b>:\n- Select Field\n- Required\n- Options: Active, Inactive\n- Pre-filled with current data",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Cancel</b>:\n Reset and Back to list perusahaan"
+            },
+            {
+              "text": "<b>Save Changes</b>\n Update and Display updated data in the perusahaan list"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

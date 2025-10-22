@@ -1,0 +1,194 @@
+{
+  "module_name": "Master Data - Template Messaging",
+  "data": [
+    {
+      "code": "<b>MT01</b>",
+      "feature": "<b>List Master Data Template Messaging</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Search</b>:\n- Nama Template",
+              "note": ""
+            },
+            {
+              "text": "<b>Filter</b>:\n- Status\n- Perusahaan",
+              "note": ""
+            },
+            {
+              "text": "<b>Sorting ASC,DESC</b>:\n- Nama Template\n- Perusahaan\n- Created At\n- Status",
+              "note": "Default sorting by created_at"
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Column</b>",
+          "detail": [
+            {
+              "text": "<b>Nama Template</b>\n- Hyperlink to detail"
+            },
+            {
+              "text": "<b>Perusahaan</b>\n- Read Only"
+            },
+            {
+              "text": "<b>Created At</b>\n- Read Only\n- Formatted date"
+            },
+            {
+              "text": "<b>Status</b>\n- Read Only\n- Tag component with color (Green for Active, Red for Inactive)"
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Role</b>: Admin"
+            },
+            {
+              "text": "Default sorting based on most recent data"
+            },
+            {
+              "text": "<b>Action</b>: Detail, Edit, Delete"
+            },
+            {
+              "text": "<b>Bulk Action</b>: Delete",
+              "note": "Multiple Data Check"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>MT02</b>",
+      "feature": "<b>Create Master Data Template Messaging</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Nama Template*</b>:\n- Text Field\n- String\n- Required",
+              "note": ""
+            },
+            {
+              "text": "<b>Perusahaan*</b>:\n- Select Dropdown\n- Required\n- Data from Master Data Perusahaan",
+              "note": ""
+            },
+            {
+              "text": "<b>Body*</b>:\n- WYSIWYG Editor (Future: TinyMCE)\n- Currently: Large Text Area with HTML support\n- Required\n- Minimum 10 characters",
+              "note": "Supports HTML formatting and placeholders like [Name], [Date], [Project Name]"
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Status</b>: Automatically set to 'Active' when creating"
+            },
+            {
+              "text": "<b>Cancel</b>:\n Reset and Back to list template messaging"
+            },
+            {
+              "text": "<b>Submit</b>\n Save and Display data in the template messaging list"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>MT03</b>",
+      "feature": "<b>Detail Master Data Template Messaging</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields Information Section</b>",
+          "detail": [
+            {
+              "text": "<b>Nama Template</b>\n- Read Only"
+            },
+            {
+              "text": "<b>Perusahaan</b>\n- Read Only"
+            },
+            {
+              "text": "<b>Status</b>\n- Read Only\n- Tag component with color"
+            },
+            {
+              "text": "<b>Created At</b>\n- Read Only\n- Formatted date"
+            },
+            {
+              "text": "<b>Updated At</b>\n- Read Only\n- Formatted date"
+            }
+          ]
+        },
+        {
+          "info": "<b>Fields Message Content Section</b>",
+          "detail": [
+            {
+              "text": "<b>HTML Preview</b>\n- Rendered HTML content\n- Shows formatted message as it would appear"
+            },
+            {
+              "text": "<b>Raw HTML Code</b>\n- Shows raw HTML source\n- Monospace font\n- Scrollable view"
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Action Buttons</b>: Edit, Delete"
+            },
+            {
+              "text": "<b>Delete</b>: Confirmation and redirect to list"
+            },
+            {
+              "text": "<b>Edit</b>: Navigate to update page"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>MT04</b>",
+      "feature": "<b>Update Master Data Template Messaging</b>",
+      "acceptances": [
+        {
+          "info": "<b>Fields</b>",
+          "detail": [
+            {
+              "text": "<b>Nama Template*</b>:\n- Text Field\n- String\n- Required\n- Pre-filled with current value",
+              "note": ""
+            },
+            {
+              "text": "<b>Perusahaan*</b>:\n- Select Dropdown\n- Required\n- Data from Master Data Perusahaan\n- Pre-filled with current value",
+              "note": ""
+            },
+            {
+              "text": "<b>Body*</b>:\n- WYSIWYG Editor (Future: TinyMCE)\n- Currently: Large Text Area with HTML support\n- Required\n- Minimum 10 characters\n- Pre-filled with current value",
+              "note": "Supports HTML formatting and placeholders"
+            },
+            {
+              "text": "<b>Status*</b>:\n- Select Dropdown\n- Options: Active, Inactive\n- Required\n- Pre-filled with current value",
+              "note": "Only visible in edit mode"
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Cancel</b>:\n Reset and Back to template detail or list"
+            },
+            {
+              "text": "<b>Save Changes</b>\n Update data and Display success message"
+            },
+            {
+              "text": "<b>Form Validation</b>: All required fields must be filled"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "created_at": "2025-10-21T04:56:43.000Z",
+  "updated_at": "2025-10-21T04:56:43.000Z"
+}

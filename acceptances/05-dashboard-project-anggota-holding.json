@@ -1,0 +1,148 @@
+{
+  "module_name": "Dashboard - Project Anggota Holding",
+  "data": [
+    {
+      "code": "<b>DPH01</b>",
+      "feature": "<b>Peta GIS Indonesia - Sebaran Project</b>",
+      "acceptances": [
+        {
+          "info": "<b>Komponen Peta</b>",
+          "detail": [
+            {
+              "text": "<b>Base Map</b>:\n- OpenStreetMap Indonesia\n- Fokus view pada wilayah Indonesia\n- Zoom level default 5",
+              "note": "Peta dapat di-zoom dan di-pan"
+            },
+            {
+              "text": "<b>Circle Markers</b>:\n- 4 lingkaran dengan warna berbeda (Merah, Biru, Kuning, Hijau)\n- Ukuran lingkaran proporsional dengan budget project\n- Border putih dengan shadow",
+              "note": "Budget terbesar = lingkaran terbesar"
+            },
+            {
+              "text": "<b>Legend</b>:\n- Posisi pojok kiri bawah\n- Menampilkan warna dan lokasi project",
+              "note": "Legend dalam bentuk Card"
+            }
+          ]
+        },
+        {
+          "info": "<b>Data Project</b>",
+          "detail": [
+            {
+              "text": "<b>Project 1 - Jakarta</b>:\n- Nama: Proyek Pembangunan Infrastruktur Jakarta\n- Budget: Rp 150.000.000.000\n- PIC: Ahmad Setiawan\n- Status: In Progress\n- Progress: 65%\n- Warna: Merah"
+            },
+            {
+              "text": "<b>Project 2 - Jakarta</b>:\n- Nama: Proyek Smart City Jakarta\n- Budget: Rp 120.000.000.000\n- PIC: Dewi Kartika\n- Status: In Progress\n- Progress: 80%\n- Warna: Merah Muda"
+            },
+            {
+              "text": "<b>Project 3 - Surabaya</b>:\n- Nama: Proyek Modernisasi Pelabuhan Surabaya\n- Budget: Rp 85.000.000.000\n- PIC: Siti Nurhaliza\n- Status: In Progress\n- Progress: 45%\n- Warna: Biru"
+            },
+            {
+              "text": "<b>Project 4 - Surabaya</b>:\n- Nama: Proyek Kawasan Ekonomi Khusus Surabaya\n- Budget: Rp 95.000.000.000\n- PIC: Eko Prasetyo\n- Status: Planning\n- Progress: 30%\n- Warna: Biru Muda"
+            },
+            {
+              "text": "<b>Project 5 - Balikpapan</b>:\n- Nama: Proyek Pengembangan Kawasan Industri Balikpapan\n- Budget: Rp 65.000.000.000\n- PIC: Budi Hartono\n- Status: Planning\n- Progress: 25%\n- Warna: Kuning"
+            },
+            {
+              "text": "<b>Project 6 - Jayapura</b>:\n- Nama: Proyek Energi Terbarukan Jayapura\n- Budget: Rp 45.000.000.000\n- PIC: Maria Santoso\n- Status: Planning\n- Progress: 15%\n- Warna: Hijau"
+            },
+            {
+              "text": "<b>Project 7 - Medan</b>:\n- Nama: Proyek Pembangunan Bandara Medan\n- Budget: Rp 110.000.000.000\n- PIC: Rahman Hidayat\n- Status: In Progress\n- Progress: 55%\n- Warna: Orange"
+            },
+            {
+              "text": "<b>Project 8 - Denpasar</b>:\n- Nama: Proyek Pengembangan Pariwisata Denpasar\n- Budget: Rp 75.000.000.000\n- PIC: I Nyoman Wiratha\n- Status: In Progress\n- Progress: 70%\n- Warna: Ungu"
+            }
+          ]
+        },
+        {
+          "info": "<b>Popup Information</b>",
+          "detail": [
+            {
+              "text": "<b>Circle Markers</b>:\n- 8 lingkaran dengan warna berbeda (Merah, Merah Muda, Biru, Biru Muda, Kuning, Hijau, Orange, Ungu)\n- Ukuran lingkaran proporsional dengan budget project\n- Border putih dengan shadow",
+              "note": "Budget terbesar = lingkaran terbesar"
+            },
+            {
+              "text": "<b>Informasi yang ditampilkan</b>:\n- Nama Project (Title)\n- Location\n- PIC (Person in Charge)\n- Budget (format Rupiah)\n- Progress (%)\n- Status (dengan Tag warna)",
+              "note": "Status tag: Blue untuk In Progress, Orange untuk Planning"
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Role</b>: All",
+              "note": "Semua user bisa mengakses"
+            },
+            {
+              "text": "<b>Menu Location</b>:\n- Dashboard > Project Anggota Holding"
+            },
+            {
+              "text": "<b>Interaksi Peta</b>:\n- Scroll untuk zoom in/out\n- Drag untuk pan/move\n- Click marker untuk detail"
+            },
+            {
+              "text": "<b>Responsiveness</b>:\n- Tinggi peta: 600px\n- Lebar: 100% (responsive)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "<b>DPH02</b>",
+      "feature": "<b>Info Total Sebaran Project per Kota</b>",
+      "acceptances": [
+        {
+          "info": "<b>Ringkasan Total Sebaran Project</b>",
+          "detail": [
+            {
+              "text": "<b>Total Project</b>:\n- Menampilkan jumlah total semua project\n- Icon: ProjectOutlined\n- Warna: Biru (#1890ff)",
+              "note": "Menghitung dari semua project di data"
+            },
+            {
+              "text": "<b>Total Kota</b>:\n- Menampilkan jumlah kota yang memiliki project\n- Icon: EnvironmentOutlined\n- Warna: Hijau (#52c41a)",
+              "note": "Menghitung unique cities"
+            },
+            {
+              "text": "<b>Total Budget</b>:\n- Menampilkan total budget semua project dalam format Triliun\n- Icon: DollarOutlined\n- Warna: Orange (#fa8c16)\n- Format: X.X T (Triliun)",
+              "note": "Penjumlahan dari budget semua project"
+            },
+            {
+              "text": "<b>Progress Rata-rata</b>:\n- Menampilkan rata-rata progress semua project\n- Format: XX%\n- Warna: Ungu (#722ed1)",
+              "note": "Rata-rata dari progress semua project"
+            }
+          ]
+        },
+        {
+          "info": "<b>Sebaran Project per Kota</b>",
+          "detail": [
+            {
+              "text": "<b>Card Layout</b>:\n- 6 kartu sesuai dengan 6 kota (Jakarta, Surabaya, Medan, Denpasar, Balikpapan, Jayapura)\n- Responsive: xs=24, sm=12, lg=6\n- Urutan berdasarkan total budget tertinggi",
+              "note": "Jakarta > Surabaya > Medan > Denpasar > Balikpapan > Jayapura"
+            },
+            {
+              "text": "<b>Informasi per Kota</b>:\n- Nama Kota (Title berwarna biru)\n- Jumlah Project (Statistic besar)\n- Total Budget (format Rupiah lengkap)\n- Progress Rata-rata (Progress bar dengan gradient)\n- Status Project (Tag: In Progress=blue, Planning=orange)\n- Daftar Project (bullet list dengan nama project)",
+              "note": "Perhitungan dinamis: Jakarta (2 project), Surabaya (2 project), Medan (1 project), Denpasar (1 project), Balikpapan (1 project), Jayapura (1 project)"
+            }
+          ]
+        },
+        {
+          "info": "<b>Behavior</b>",
+          "detail": [
+            {
+              "text": "<b>Role</b>: All",
+              "note": "Semua user bisa mengakses"
+            },
+            {
+              "text": "<b>Position</b>:\n- Berada di bawah section peta\n- Section title: 'Info Total Sebaran Project per Kota'"
+            },
+            {
+              "text": "<b>Data Source</b>:\n- Menggunakan data yang sama dengan peta\n- Real-time calculation dari projectsData",
+              "note": "Tidak ada data terpisah, semua dihitung dari data existing"
+            },
+            {
+              "text": "<b>Responsive Design</b>:\n- Card kota responsive\n- Statistics responsive\n- Text size menyesuaikan"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "updated_at": "2025-10-21T10:45:00.000Z"
+}
